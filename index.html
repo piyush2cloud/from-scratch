@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html ng-app="poolin">
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap-sidebar/dist/css/sidebar.css">
+
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+
+<body ng-controller="myCtrl">
+
+
+<div class="navbar navbar-fixed-top" style="background-color: #2E3842">
+
+    <img src="images/Logo_Mypoolin_white.png" class="hidelogo" style="width: 110px;margin-top:4px;margin-left:10px">
+
+    <button type="button" class="navbar-toggle toggle-right" style="background-color: #2E3842" data-toggle="sidebar"
+            data-target=".sidebar-right" ng-class="{changenavcolor:navcolor}">
+        <span style="background-color: white" class="icon-bar"></span>
+        <span style="background-color: white" class="icon-bar"></span>
+        <span style="background-color: white" class="icon-bar"></span>
+    </button>
+</div>
+
+
+<!-- Begin page content -->
+<div class="container-fluid" ng-controller="myCtrl">
+
+    <div class="row">
+        <div class="col-xs-7 col-sm-3 col-md-3 sidebar sidebar-right sidebar-animate"
+               style="background-color:#5585B5" >
+            <ul class="nav navbar-stacked">
+                <li class="active">
+                    <a href="#" style="color:white">Home</a>
+                </li>
+                <li>
+                    <a href="#about" style="color:white">About</a>
+                </li>
+                <li>
+                    <a href="#contact" style="color:white">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row" style="height: 400px;background-color:#2E3842;display: block">
+        <div class="main col-md-12">
+
+            <span class="firstline margin-line-top center-block"
+                  ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>
+
+            <div class="center-block text-center logofade" ng-class="{ logoshow: showlogo}">
+                <img src="images/Logo_Mypoolin_white.png" style="width: 155px">
+            </div>
+
+            <span class="firstline center-block" ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>
+
+            <div class="center-block text-center" style="margin-top: 30px">
+
+                <p class="taglinefade" ng-class="{ taglineshow: showtagline}"
+                   style="font-family: 'Titillium Web',sans-serif;color: orange;line-height: 1.5em;font-size: 20px;">
+                    Here On, You'll Never Say
+                    <b style="font-size: 25px;padding-left: .3em;color: orange;font-family: 'Titillium Web',sans-serif">"YOU
+                        OWE ME"</b></p>
+            </div>
+
+            <div class="row taglinefade" ng-class="{ taglineshow: showtagline}" style="padding: 0px;margin-top:30px">
+
+                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0px">
+
+                    <div style="display: block;padding-left: 58%;">
+                        <input type="number" placeholder="9999-99999" class="form-control" style="display: inline;width: 160px">
+                        <span style="font-family: 'Titillium Web', sans-serif;color: orange;margin-left:3%;font-size:18px">Get Link</span>
+                    </div>
+
+                    <div style="display: block;padding-left:58%;margin-top:10px">
+                        <a href="https://play.google.com/store/apps/details?id=com.app.mypoolin&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web">
+                            <img  src="_include/img/playstore_white.png" style="width:100px;border:2px solid whitesmoke">
+                        </a>
+                        <a href="https://itunes.apple.com/in/app/mypoolin-plan-pay-friends/id1032623508?mt=8&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web">
+                            <img src="_include/img/appstore-white.png" style="width:96px;border:2px solid whitesmoke;padding-left:3px;padding-right:3px">
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0px">
+                    <button style="display: block;margin-left: 10%;padding-left:7%;padding-right:7%;border: 3px solid white
+                    ;background-color: #2E3842;height:50px"
+                            class="btn">
+                        <span style="color: white;font-family: 'Titillium Web', sans-serif">START THE WEB</span>
+                    </button>
+
+                    <div style="display: block;margin-left:10%;margin-top:10px">
+                        <a href="#" target="_blank" style="text-decoration: none;color: white">
+                            Winner of QPrize 2015 India
+                            <img src="_include/img/Qualcomm1.png" style="width:60px"
+                                 alt="Mypoolin wins QPrize 2015 - Qualcomm Ventures and Accel Partners combined">
+                            <img src="_include/img/accel1.png" style="width:60px"
+                                 alt="Mypoolin wins QPrize 2015 - Qualcomm Ventures and Accel Partners combined">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="row" style="height: 400px;background-color: white">
+
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 planandplay text-center center-block" style="height: 100%">
+
+            <a style="color: #152A49;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
+                PLAN &amp; PAY
+            </a>
+            <img src="images/Flow_Plan.gif" style="width: 200px">
+
+
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 splitandsettle text-center center-block" style="height: 100%">
+
+            <a style="color: #152A49;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
+                SPLIT &amp; SETTLE
+            </a>
+            <img src="images/Flow_Split.gif" style="width: 200px">
+        </div>
+
+    </div>
+
+    <div class="row text-center" style="height: 150px;background-color:#2E3842;">
+
+        <h3 style="font-family: 'titillium web';font-weight: 100;letter-spacing: 1px;text-transform: capitalize;padding-top: 12px;
+        color:white">
+            30000+ awesome people active already!</h3>
+        <h1 style="font-family: 'titillium web';font-weight: 600;letter-spacing: 3px;font-size: 25px;color:white">
+            WHAT DO YOU WANT TO TODAY?
+        </h1>
+
+    </div>
+
+    <div class="row text-center" style="height: 150px;">
+
+        <h3 style="float: none;font-family: 'titillium web';letter-spacing: 1px;font-weight: 100;
+        text-transform: none;padding-top: 21px;margin-bottom: -8px;color: #1d242a;">
+            Trusted and Secure. Our Payment Partners</h3>
+
+        <div class="boxed1" style="height: 64px;width: 100%;margin-top:5px">
+            <img src="_include/img/buyer-protection.jpg" title="PayuMoney Buyer Protection Security"
+                 style="padding-right:5px;height: 20px;width: auto;margin-top: 10px;" alt="Payumoney on Mypoolin">
+            <img src="_include/img/seal.png" title="PayTM Protection Security"
+                 style="padding-left:5px;padding-right:5px;width: auto;height: 20px;" alt="Paytm wallet on Mypoolin">
+            <img src="_include/img/mobikwik-stamp.jpg" title="Mobikwik Wallet Gateway"
+                 style="padding-left:5px;height: 20px;width: auto;" alt="Mobikwik wallet on Mypoolin">
+            <img src="_include/img/paypal-stamp.jpg" title="Paypal Wallet Payment Gateway"
+                 style="padding-left:5px;height: 20px;width: auto;" alt="Paypal on Mypoolin">
+        </div>
+
+
+           <!-- <img class="center-block" src="_include" style="width:120px;display: block">-->
+
+            <a style="font-size: small;font-family: 'titillium web';letter-spacing: 3px;font-weight: 100;
+            text-transform: uppercase;color: #1d242a;">
+                SEAL OF ASSURANCE!
+            </a>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

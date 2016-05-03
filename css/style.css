@@ -1,0 +1,144 @@
+.default {
+    -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 2s;
+    opacity: 1;
+
+}
+
+.default:hover {
+    background-color: #0059bc;
+}
+
+.fade {
+    -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+.outerdiv {
+    height: 100vh;
+}
+
+.firstdiv {
+    background-color: red;
+    height: 100%;
+}
+
+.seconddiv {
+    background-color: darkslateblue;
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.firstline {
+
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, opacity 1s;
+    background-color: white;
+    width: 0px;
+!important;
+    height: 2px;
+    opacity: 0;
+}
+
+.margin-line-top {
+    margin-top: 10px !important;
+}
+
+.firstlineaniamte {
+    width: 200px;
+!important;
+}
+
+.fadeline {
+    opacity: 1;
+}
+
+.logofade {
+    -webkit-transition: opacity 0s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0s;
+    opacity: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.logoshow {
+    opacity: 1;
+}
+
+.taglinefade {
+    -webkit-transition: opacity 3s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 3s;
+    opacity: 0;
+}
+
+.taglineshow {
+    opacity: 1;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .lele {
+        background-color: #0059bc;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .lele {
+        background-color: grey;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .lele {
+        background-color: blueviolet;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .lele {
+        background-color: #b2dba1;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .lele {
+        background-color: #b9151b;
+    }
+}
+
+.planandplay {
+
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
+}
+
+.splitandsettle {
+
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
+}
+
+.planandplay:hover {
+    background-color: cornflowerblue;
+}
+
+.splitandsettle:hover {
+    background-color: cornflowerblue;
+}
+
+.changenavcolor {
+    background-color: yellow;
+!important;
+}
+
+.hidelogo{
+    opacity:0;
+}

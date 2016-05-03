@@ -1,0 +1,46 @@
+#wrapper {
+    postion: fixed;
+    width: 120px;
+    height: 66px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    z-index: 1;
+
+} 
+
+
+
+.logo {
+    height: 66px;
+    width: 171px;
+    float: left;
+
+}
+
+.linked {
+    height: 23px;
+    width: 217px;
+    margin-top: 12px;
+    margin-right: 0;
+    left: 0;
+    float: right;
+
+}
+
+
+#header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;       
+    background-image: url("/images/header-bg.png");
+    background-repeat: repeat-x;
+    z-index: -1;
+
+
+}
