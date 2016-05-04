@@ -83,27 +83,31 @@ body {
     .lele {
         background-color: #0059bc;
     }
-}
 
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .lele {
-        background-color: grey;
+    .paddingleftinput{
+        padding-left:52%; !important;
     }
-}
 
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-    .lele {
-        background-color: blueviolet;
+    .paddingstorelogo{
+        padding-left:52%; !important;
     }
-}
 
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-    .lele {
-        background-color: #b2dba1;
+    .startthewebdesktop{
+        padding-left:7%;
+        padding-right:7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height:50px;
     }
+
+    .startwebmarginleft{
+        margin-left:10%;
+    }
+
+    .inputmargindesktop{
+        margin-left:55%;
+    }
+
 }
 
 /* Portrait phones and smaller */
@@ -111,6 +115,112 @@ body {
     .lele {
         background-color: #b9151b;
     }
+    .paddingleftinput{
+        padding-left:3%; !important;
+    }
+    .startthewebmargintop{
+       margin-top:10px;
+        text-align:center;
+    }
+    .startthewebdesktop{
+        padding-left:7%;
+        padding-right:7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height:50px;
+    }
+
+    .inputmarginmobile{
+        text-align:center;
+    }
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .lele {
+        background-color: grey;
+    }
+
+    .lele {
+        background-color: #b9151b;
+    }
+    .paddingleftinput{
+        padding-left:3%; !important;
+    }
+    .startthewebmargintop{
+        margin-top:10px;
+        text-align:center;
+    }
+    .startthewebdesktop{
+        padding-left:7%;
+        padding-right:7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height:50px;
+    }
+
+    .inputmarginmobile{
+        text-align:center;
+    }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .lele {
+        background-color: blueviolet;
+    }
+
+    .lele {
+        background-color: #b9151b;
+    }
+    .paddingleftinput{
+        padding-left:3%; !important;
+    }
+    .startthewebmargintop{
+        margin-top:10px;
+        text-align:center;
+    }
+    .startthewebdesktop{
+        padding-left:7%;
+        padding-right:7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height:50px;
+    }
+
+    .inputmarginmobile{
+        text-align:center;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .lele {
+        background-color: #b9151b;
+    }
+    .paddingleftinput{
+        padding-left:3%; !important;
+    }
+    .startthewebmargintop{
+        margin-top:10px;
+        text-align:center;
+    }
+    .startthewebdesktop{
+        padding-left:7%;
+        padding-right:7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height:50px;
+    }
+
+    .inputmarginmobile{
+        text-align:center;
+    }
+
 }
 
 .planandplay {

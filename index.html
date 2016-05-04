@@ -19,7 +19,6 @@
 
 <body ng-controller="myCtrl">
 
-
 <div class="navbar navbar-fixed-top" style="background-color: #2E3842">
 
     <img src="images/Logo_Mypoolin_white.png" class="hidelogo" style="width: 110px;margin-top:4px;margin-left:10px">
@@ -77,35 +76,39 @@
 
             <div class="row taglinefade" ng-class="{ taglineshow: showtagline}" style="padding: 0px;margin-top:30px">
 
-                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0px">
+                <div class="col-md-6 col-sm-12 col-xs-12 inputmarginmobile" style="padding: 0px">
 
-                    <div style="display: block;padding-left: 58%;">
+                    <div style="display: block;" class="inputmargindesktop">
+
                         <input type="number" placeholder="9999-99999" class="form-control"
                                style="display: inline;width: 160px">
-                        <span style="font-family: 'Titillium Web', sans-serif;color: orange;margin-left:3%;font-size:18px">Get Link</span>
+                        <span style="font-family: 'Titillium Web', sans-serif;color: orange;
+                        margin-left:3%;font-size:18px">Get Link</span>
                     </div>
 
-                    <div style="display: block;padding-left:58%;margin-top:10px">
-                        <a href="https://play.google.com/store/apps/details?id=com.app.mypoolin&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web">
-                            <img src="_include/img/playstore_white.png" style="width:100px;border:2px solid whitesmoke">
+                    <div style="margin-top:10px;" class="inputmargindesktop">
+
+                        <a href="https://play.google.com/store/apps/details?id=com.app.mypoolin&amp;referrer=utm_
+                        source%3Dhome_page%26utm_medium%3Dmypoolin_web" style="border:2px solid white;padding:5px">
+                            <img src="_include/img/playstore_white.png" style="width:100px">
                         </a>
-                        <a href="https://itunes.apple.com/in/app/mypoolin-plan-pay-friends/id1032623508?mt=8&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web">
-                            <img src="_include/img/appstore-white.png"
-                                 style="width:96px;border:2px solid whitesmoke;padding-left:3px;padding-right:3px">
+                        
+                        <a href="https://itunes.apple.com/in/app/mypoolin-plan-pay-friends/i
+                        d1032623508?mt=8&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web"
+                           style="border:2px solid white;padding:5px;margin-left:2%">
+                            <img src="_include/img/appstore-white.png" style="width:100px">
                         </a>
                     </div>
 
                 </div>
 
+                <div class="col-md-6 col-sm-12 col-xs-12 startthewebmargintop" style="padding:0px">
 
-                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0px">
-                    <button style="display: block;margin-left: 10%;padding-left:7%;padding-right:7%;border: 3px solid white
-                    ;background-color: #2E3842;height:50px"
-                            class="btn">
+                    <button class="startthewebdesktop startwebmarginleft">
                         <span style="color: white;font-family: 'Titillium Web', sans-serif">START THE WEB</span>
                     </button>
 
-                    <div style="display: block;margin-left:10%;margin-top:10px">
+                    <div style="display: block;margin-top:10px" class="startwebmarginleft">
                         <a href="#" target="_blank" style="text-decoration: none;color: white">
                             Winner of QPrize 2015 India
                             <img src="_include/img/Qualcomm1.png" style="width:60px"
@@ -121,14 +124,15 @@
 
     <div class="row" style="height: 400px;background-color: white">
 
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 planandplay text-center center-block" style="height: 100%">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 planandplay text-center"
+             style="height: 100%;border-right:2px solid black">
             <a style="color: #152A49;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
                 SPLIT &amp; SETTLE
             </a>
             <img src="images/Flow_Split.gif" style="width: 200px">
         </div>
 
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 splitandsettle text-center center-block" style="height: 100%">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 splitandsettle text-center" style="height: 100%">
             <a style="color: #152A49;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
                 PLAN &amp; PAY
             </a>
