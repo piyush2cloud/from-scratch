@@ -20,7 +20,7 @@
 }
 
 .firstdiv {
-    background-color: red;
+    background-color:red;
     height: 100%;
 }
 
@@ -29,15 +29,11 @@
     height: 100%;
 }
 
-body {
-    padding-top: 50px;
-}
-
 .firstline {
 
     -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
     transition: width 1s, opacity 1s;
-    background-color: white;
+    background-color:white;
     width: 0px;  !important;
     height: 2px;
     opacity: 0;
@@ -57,8 +53,8 @@ body {
 }
 
 .logofade {
-    -webkit-transition: opacity 0s; /* For Safari 3.1 to 6.0 */
-    transition: opacity 0s;
+    -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 1s;
     opacity: 0;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -249,4 +245,244 @@ body {
 
 .hidelogo{
     opacity:0;
+}
+
+#phoneNumber {
+    text-align: center;
+    width: 152px;
+    height: 48px;
+    border-radius: 5px;
+    color: #0c77ad;
+    font-family:'titillium web',sans-serif;
+}
+
+.linkbuttonforapp {
+    background-color: white;
+    border: 1px solid #f5a623;
+    height: 48px;
+    width: 152px;
+    border-radius:5px;
+    margin-left:30px;
+    color:#f5a623;
+    font-family:'Titillium Web',
+    sans-serif;letter-spacing:1px;font-weight:900;font-size:12px;
+}
+
+.linkbuttonforapp:hover{
+    background-color:#f5a623;
+    color:white;
+}
+
+
+#linkButton {
+    width: 150px;
+}
+
+#getLink {
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.topbackground{
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
+    background-color: #2E3842;
+}
+
+.changetopbackground{
+    background-color:white;
+}
+
+.defaultnavcolor{
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
+    background-color:#2E3842;
+}
+
+.changenavcolour{
+    background-color:white;
+}
+
+.divone{
+    background: url("../images");
+}
+
+
+
+.storebutton{
+    border:1px solid black;
+    background-color:white;
+    width:150px;
+}
+
+.storebutton:hover{
+}
+
+.linkhover:hover{
+    background-color:gainsboro;
+}
+
+.defaulticonbar{
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
+    background-color:#5585B5;
+}
+
+.changeiconbar{
+    background-color:#5585B5;
+}
+
+.startonwebbutton{
+    background-color:white;
+    border:1px solid #f5a623;
+    height:50px;
+    width:247px;
+    color:#f5a623;
+    font-family:'Titillium Web', sans-serif;
+    letter-spacing:1px;
+    font-weight:900;
+    font-size:12px
+}
+
+.startonwebbutton:hover{
+    background-color:orange;
+    color:white;
+}
+
+.starttimerlogo {
+  display:initial;
+}
+
+.endtimerlogo {
+    display:none;
+}
+
+.sidebar{
+    border-top: 1px solid black;
+    top:0px;
+    height: 100%;
+    z-index:10;
+}
+
+body{
+    padding-top:50px;
+}
+
+.howitworks{
+
+    color:white;!important;
+}
+
+.howitworks:hover{
+
+  color:black;
+}
+
+
+
+.examples{
+    color:white;!important;
+
+}
+
+.examples:hover{
+    color:black;
+
+}
+
+.getstarted{
+    color:white;!important;
+
+}
+
+.getstarted:hover{
+    color:black;
+
+}
+
+.faqs{
+    color:white;!important;
+
+}
+
+.faqs:hover{
+    color:black;
+
+}
+
+.forbusinesses{
+    color:white;!important;
+
+}
+
+.forbusinesses:hover{
+    color:black;
+
+}
+
+.myaccount{
+    color:#f5a623;!important;
+
+}
+
+.myaccount:hover{
+    color:black;
+
+}
+
+.splitsettletextdefault {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    opacity: 0;
+    color:#0c77ad;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:18px;
+    font-weight: 900;
+    letter-spacing:0.2px;
+    zoom:1;
+
+}
+
+.splitsettletextonefade {
+    opacity: 1;
+}
+
+.splitsettletexttwofade {
+    opacity: 1;
+}
+
+.splitsettletextthreefade {
+    opacity: 1;
+}
+
+.splitsettletextfourfade {
+    opacity: 1;
+}
+
+.splitsettleimagedefault {
+    width: 180px;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+    display:none;
+    opacity:0;
+}
+
+.splitsettleimageonefade {
+    display:initial;
+    opacity:1;
+}
+
+.splitsettleimagetwofade {
+    display:initial;
+    opacity:1;
+}
+
+.splitsettleimagethreefade {
+    display:initial;
+    opacity:1;
+}
+
+.splitsettleimagefourfade {
+    display:initial;
+    opacity:1;
 }

@@ -19,133 +19,297 @@
 
 <body ng-controller="myCtrl">
 
-<div class="navbar navbar-fixed-top" style="background-color: #2E3842">
 
+<div class="navbar navbar-fixed-top defaultnavcolor" ng-class="{changenavcolour : navcolour}">
+
+    <img src="_include/img/Logo_Blue.png" class="starttimerlogo" style="width:34px;margin-top:4px;margin-left:10px">
+    <img src="_include/img/Logo_White.png" class="endtimerlogo" style="width:34px;margin-top:4px;margin-left:10px">
+
+
+    <!--
     <img src="images/Logo_Mypoolin_white.png" class="hidelogo" style="width: 110px;margin-top:4px;margin-left:10px">
+    -->
 
-    <button type="button" class="navbar-toggle toggle-right" style="background-color: #2E3842" data-toggle="sidebar"
-            data-target=".sidebar-right" ng-class="{changenavcolor:navcolor}">
+    <button type="button"
+            class="navbar-toggle toggle-right defaulticonbar"
+            data-toggle="sidebar"
+            data-target=".sidebar-right"
+            ng-class="{changeiconbar:iconbarchange}">
+
         <span style="background-color: white" class="icon-bar"></span>
         <span style="background-color: white" class="icon-bar"></span>
         <span style="background-color: white" class="icon-bar"></span>
+
     </button>
-</div>
 
-
-<!-- Begin page content -->
-<div class="container-fluid" ng-controller="myCtrl">
-
-    <div class="row">
+    <div class="row" style="z-index:10;background-color:red;position:absolute;height:100%">
         <div class="col-xs-7 col-sm-3 col-md-3 sidebar sidebar-right sidebar-animate"
-             style="background-color:#5585B5">
+             style="background-color:#5585B5;z-index:10;padding-left:0px;padding-right:0px;padding-top:30px">
+
             <ul class="nav navbar-stacked">
-                <li class="active">
-                    <a href="#" style="color:white">Home</a>
+
+                <li class="active howitworks">
+                    <a class="howitworks" href="#" style="font-family:'Titillium Web,',sans-serif">
+                        HOW IT WORKS
+                    </a>
                 </li>
-                <li>
-                    <a href="#about" style="color:white">About</a>
+
+                <li class="examples">
+                    <a href="#about" class="examples" style="font-family: 'Titillium Web', sans-serif">EXAMPLES</a>
                 </li>
-                <li>
-                    <a href="#contact" style="color:white">Contact</a>
+
+                <li class="getstarted">
+                    <a href="#contact" class="getstarted" style="font-family: 'Titillium Web', sans-serif">GET
+                        STARTED</a>
                 </li>
+
+                <li class="faqs">
+                    <a href="#contact" class="faqs" style="font-family: 'Titillium Web', sans-serif">FAQS</a>
+                </li>
+
+                <li class="forbusinesses">
+                    <a href="#contact" class="forbusinesses" style="font-family: 'Titillium Web', sans-serif">FOR
+                        BUSINESSES</a>
+                </li>
+
+                <li class="myaccount">
+                    <a href="#contact" class="myaccount" style="font-family: 'Titillium Web', sans-serif">MY ACCOUNT</a>
+                </li>
+
             </ul>
         </div>
     </div>
 
+</div>
 
-    <div class="row" style="height: 400px;background-color:#2E3842;display: block">
+<!-- Begin page content -->
+<div class="container-fluid" ng-controller="myCtrl">
+
+
+    <div class="row topbackground" ng-class="{changetopbackground:lightbackground}" style="height: 500px;display: block;
+    border-bottom:1px solid black">
+
         <div class="main col-md-12">
 
-            <span class="firstline margin-line-top center-block"
-                  ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>
+            <!-- <span class="firstline margin-line-top center-block"
+                   ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>-->
 
-            <div class="center-block text-center logofade" ng-class="{ logoshow: showlogo}">
-                <img src="images/Logo_Mypoolin_white.png" style="width: 155px">
+            <div class="center-block text-center taglinefade" ng-class="{taglineshow:showtagline}">
+                <!--<img src="images/Logo_Mypoolin_white.png" style="width: 155px;color:red">-->
+                <p style="color:rgb(85, 133, 181);font-family: 'Titillium Web',sans-serif;
+                font-size: 46px;margin-bottom: 1px;letter-spacing:0;font-weight: bold;">
+                    Mypoolin
+                </p>
+
+                <p style="color:rgb(85, 133, 181);font-family:'Titillium Web',sans-serif;
+                line-height: 1.5em;font-size: 20px;letter-spacing: .5px;margin-left:10px">
+                    Payments made fun
+                </p>
             </div>
 
-            <span class="firstline center-block" ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>
 
-            <div class="center-block text-center" style="margin-top: 30px">
+            <!--  <span class="firstline center-block" ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>-->
 
-                <p class="taglinefade" ng-class="{ taglineshow: showtagline}"
-                   style="font-family: 'Titillium Web',sans-serif;color: orange;line-height: 1.5em;font-size: 20px;">
-                    Here On, You'll Never Say
-                    <b style="font-size: 25px;padding-left: .3em;color: orange;font-family: 'Titillium Web',sans-serif">"YOU
-                        OWE ME"</b></p>
+            <div class="text-center taglinefade" ng-class="{taglineshow:showtagline}" style="margin-top:15px">
+
+                <input id="phoneNumber" type="phone" placeholder="9999-99999" maxlength="10">
+
+                <button class="linkbuttonforapp">
+                   <span style="">
+                       GET LINK
+                   </span>
+                </button>
+
             </div>
 
-            <div class="row taglinefade" ng-class="{ taglineshow: showtagline}" style="padding: 0px;margin-top:30px">
+            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top:24px">
 
-                <div class="col-md-6 col-sm-12 col-xs-12 inputmarginmobile" style="padding: 0px">
+                <a href="https://play.google.com/store/apps/details?id=com.app.mypoolin&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web">
 
-                    <div style="display: block;" class="inputmargindesktop">
-
-                        <input type="number" placeholder="9999-99999" class="form-control"
-                               style="display: inline;width: 160px">
-                        <span style="font-family: 'Titillium Web', sans-serif;color: orange;
-                        margin-left:3%;font-size:18px">Get Link</span>
-                    </div>
-
-                    <div style="margin-top:10px;" class="inputmargindesktop">
-
-                        <a href="https://play.google.com/store/apps/details?id=com.app.mypoolin&amp;referrer=utm_
-                        source%3Dhome_page%26utm_medium%3Dmypoolin_web" style="border:2px solid white;padding:5px">
-                            <img src="_include/img/playstore_white.png" style="width:100px">
-                        </a>
-                        
-                        <a href="https://itunes.apple.com/in/app/mypoolin-plan-pay-friends/i
-                        d1032623508?mt=8&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web"
-                           style="border:2px solid white;padding:5px;margin-left:2%">
-                            <img src="_include/img/appstore-white.png" style="width:100px">
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-sm-12 col-xs-12 startthewebmargintop" style="padding:0px">
-
-                    <button class="startthewebdesktop startwebmarginleft">
-                        <span style="color: white;font-family: 'Titillium Web', sans-serif">START THE WEB</span>
+                    <button class="btn storebutton">
+                        <img class="googlestoreimage" src="_include/img/Google_Play_button.png" style="width:100px">
                     </button>
 
-                    <div style="display: block;margin-top:10px" class="startwebmarginleft">
-                        <a href="#" target="_blank" style="text-decoration: none;color: white">
-                            Winner of QPrize 2015 India
-                            <img src="_include/img/Qualcomm1.png" style="width:60px"
-                                 alt="Mypoolin wins QPrize 2015 - Qualcomm Ventures and Accel Partners combined">
-                            <img src="_include/img/accel1.png" style="width:60px"
-                                 alt="Mypoolin wins QPrize 2015 - Qualcomm Ventures and Accel Partners combined">
-                        </a>
-                    </div>
-                </div>
+                </a>
+
+                <a href="https://itunes.apple.com/in/app/mypoolin-plan-pay-friends/id1032623508?mt=8&amp;ref
+                errer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web" style="margin-left:30px">
+
+                    <button class="btn storebutton">
+                        <img class="appstoreimage" src="_include/img/appstore-button.png" style="width:97px;">
+                    </button>
+
+                </a>
+
             </div>
+
+            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 18px">
+
+                <div style="font-family: 'Titillium Web'; letter-spacing:5px; padding-top:1em;color:black;font-weight:900">
+                    ..............................................
+                </div>
+
+            </div>
+
+            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 30px">
+
+                <button class="btn startonwebbutton">
+                    START ON WEB
+                </button>
+
+            </div>
+
+            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 20px">
+
+                <a href="">
+                    Winner of QPrize 2015 India
+                    <img src="_include/img/qualcomm-1.png" style="width:50px;margin-left:5px">
+                    <img src="_include/img/Accel.png" style="width:50px;margin-left:5px">
+                </a>
+
+            </div>
+
+
         </div>
     </div>
 
-    <div class="row" style="height: 400px;background-color: white">
+    <div class="row" style="height: 400px;">
 
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 planandplay text-center"
-             style="height: 100%;border-right:2px solid black">
-            <a style="color: #152A49;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
+        <!--<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 planandplay text-center"
+             style="height: 100%;border-right:1px solid black">
+            <a style="color:white;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
                 SPLIT &amp; SETTLE
             </a>
             <img src="images/Flow_Split.gif" style="width: 200px">
         </div>
 
         <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 splitandsettle text-center" style="height: 100%">
-            <a style="color: #152A49;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
+            <a style="color:white;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
                 PLAN &amp; PAY
             </a>
             <img src="images/Flow_Plan.gif" style="width: 200px">
+        </div>-->
+
+        <div class="col-md-6 col-lg-6"
+             style="background-color:white;height:100%;border-right:1px solid black;padding-top:20px">
+
+            <div class="row text-center">
+                <a style="text-decoration: none;font-family: 'titillium web',sans-serif;
+            font-size: 1.7em;letter-spacing:1px;font-weight:100;color:black">
+                    Split & Settle
+                </a>
+            </div>
+
+
+            <div class="row" style="height:100%">
+
+                <div class="col-md-6 col-lg-6 text-center"
+                     style="background-color:white;height:100%;padding-top:30px">
+
+                    <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_1.png" class="splitsettleimagedefault"
+                         ng-class="{splitsettleimageonefade:splitsettleimageonefading}">
+                    <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_2.png" class="splitsettleimagedefault"
+                         ng-class="{splitsettleimagetwofade:splitsettleimagetwofading}">
+                    <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_3.png" class="splitsettleimagedefault"
+                         ng-class="{splitsettleimagethreefade:splitsettleimagethreefading}">
+                    <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_4.png" class="splitsettleimagedefault"
+                         ng-class="{splitsettleimagefourfade:splitsettleimagefourfading}">
+
+                </div>
+
+                <div class="col-md-6 col-lg-6"
+                     style="background-color: white;height:100%;padding-top:30px;padding-left:80px">
+
+                    <span class="splitsettletextdefault" style="display:block"
+                          ng-class="{splitsettletextonefade:splittextone}">
+                         1. Choose Amount
+                    </span>
+
+                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                          ng-class="{splitsettletexttwofade:splittexttwo}">
+                          2. Create Pool
+                    </span>
+
+                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                          ng-class="{splitsettletexttwofade:splittextthree}">
+                          3. Manage Friends
+                    </span>
+
+                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                          ng-class="{splitsettletexttwofade:splittextfour}">
+                          4. Payment to Bank
+                     </span>
+
+                </div>
+
+            </div>
         </div>
 
+
+        <div class="col-md-6 col-lg-6" style="background-color: white;height:100%;padding-top:20px">
+            <div class="row text-center">
+
+            <a style="text-decoration: none;  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+;
+            font-size: 1.7em;letter-spacing:1px;font-weight:100;color:black;">
+                Plan & Play
+            </a>
+
+            </div>
+
+            <div class="row" style="height:100%">
+
+                <div class="col-md-6 col-lg-6 text-center" style="background-color:white;height:100%;padding-top:30px">
+
+
+                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_1.png" class="splitsettleimagedefault"
+                         ng-class="{splitsettleimageonefade:splitsettleimageonefading}">
+                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_2.png" class="splitsettleimagedefault"
+                         ng-class="{splitsettleimagetwofade:splitsettleimagetwofading}">
+                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_3.png" class="splitsettleimagedefault"
+                         ng-class="{splitsettleimagethreefade:splitsettleimagethreefading}">
+                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_4.png" class="splitsettleimagedefault"
+                         ng-class="{splitsettleimagefourfade:splitsettleimagefourfading}">
+
+
+                </div>
+
+                <div class="col-md-6 col-lg-6"
+                     style="background-color:white;height:100%;padding-top:30px;padding-left:80px">
+
+                    <span class="splitsettletextdefault" style="display:block"
+                          ng-class="{splitsettletextonefade:splittextone}">
+                         1. Choose Amount
+                    </span>
+
+                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                          ng-class="{splitsettletexttwofade:splittexttwo}">
+                          2. Create Pool
+                    </span>
+
+                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                          ng-class="{splitsettletexttwofade:splittextthree}">
+                          3. Manage Friends
+                    </span>
+
+                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                          ng-class="{splitsettletexttwofade:splittextfour}">
+                          4. Payment to Bank
+                     </span>
+
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div class="row text-center" style="height: 150px;background-color:#2E3842;">
+
+    <div class="row text-center" style="height: 150px;background-color:#2E3842;padding-top:20px">
 
         <h3 style="font-family: 'titillium web';font-weight: 100;letter-spacing: 1px;text-transform: capitalize;padding-top: 12px;
         color:white">
             30000+ awesome people active already!</h3>
+
         <h1 style="font-family: 'titillium web';font-weight: 600;letter-spacing: 3px;font-size: 25px;color:white">
             WHAT DO YOU WANT TO TODAY?
         </h1>
@@ -162,7 +326,8 @@
             <img src="_include/img/buyer-protection.jpg" title="PayuMoney Buyer Protection Security"
                  style="padding-right:5px;height: 20px;width: auto;margin-top: 10px;" alt="Payumoney on Mypoolin">
             <img src="_include/img/seal.png" title="PayTM Protection Security"
-                 style="padding-left:5px;padding-right:5px;width: auto;height: 20px;" alt="Paytm wallet on Mypoolin">
+                 style="padding-left:5px;padding-right:5px;width: auto;height: 20px;"
+                 alt="Paytm wallet on Mypoolin">
             <img src="_include/img/mobikwik-stamp.jpg" title="Mobikwik Wallet Gateway"
                  style="padding-left:5px;height: 20px;width: auto;" alt="Mobikwik wallet on Mypoolin">
             <img src="_include/img/paypal-stamp.jpg" title="Paypal Wallet Payment Gateway"
