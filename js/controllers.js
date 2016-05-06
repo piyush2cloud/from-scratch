@@ -8,6 +8,10 @@ angular.module('poolin.controllers', [])
         $scope.starttimerlogo=1;
         $scope.endtimerlogo=0;
 
+        $scope.planplayfade=0;
+        $scope.splitsettlefade=0;
+
+
         $scope.splittextone = 0;
         $scope.splittexttwo = 0;
         $scope.splittextthree=0;
@@ -18,71 +22,197 @@ angular.module('poolin.controllers', [])
         $scope.splitsettleimagethreefading=0;
         $scope.splitsettleimagefourfading=0;
 
+        $scope.splitandsettletimerone = null;
+
+        $scope.splitsettleimageonefading=1;
+        $scope.splittextone = 1;
+
+        //Timer start function.
+        $scope.StartTimerSettle = function () {
+            $scope.splitsettlefade=1;
+            $scope.callAtInterval();
+
+        };
+
+
+        //Timer stop function.
+        $scope.StopTimerSettle = function () {
+
+            $scope.splitsettlefade=0;
+
+            $timeout.cancel($scope.splitandsettletimerone);
+            $scope.splittextone = 1;
+            $scope.splittexttwo = 0;
+            $scope.splittextthree=0;
+            $scope.splittextfour=0;
+
+            $scope.splitsettleimageonefading=1;
+            $scope.splitsettleimagetwofading=0;
+            $scope.splitsettleimagethreefading=0;
+            $scope.splitsettleimagefourfading=0;
+
+        };
 
 
         $scope.callAtInterval = function () {
-            $timeout(function () {
+
+            $scope.splitandsettletimerone =  $timeout(function () {
                 console.log(1);
 
-                $scope.splittextone = 1;
-                $scope.splittexttwo = 0;
+                $scope.splittextone = 0;
+                $scope.splittexttwo = 1;
                 $scope.splittextthree = 0;
                 $scope.splittextfour = 0;
-                $scope.splitsettleimageonefading=1;
-                $scope.splitsettleimagetwofading=0;
+                $scope.splitsettleimageonefading=0;
+                $scope.splitsettleimagetwofading=1;
                 $scope.splitsettleimagethreefading=0;
                 $scope.splitsettleimagefourfading=0;
 
-                $timeout(function () {
+                $scope.splitandsettletimerone = $timeout(function () {
                     console.log(2);
 
                     $scope.splittextone = 0;
-                    $scope.splittexttwo = 1;
-                    $scope.splittextthree = 0;
+                    $scope.splittexttwo =0;
+                    $scope.splittextthree = 1;
                     $scope.splittextfour = 0;
                     $scope.splitsettleimageonefading=0;
-                    $scope.splitsettleimagetwofading=1;
-                    $scope.splitsettleimagethreefading=0;
+                    $scope.splitsettleimagetwofading=0;
+                    $scope.splitsettleimagethreefading=1;
                     $scope.splitsettleimagefourfading=0;
 
-                    $timeout(function () {
+                    $scope.splitandsettletimerone=  $timeout(function () {
                         console.log(2);
-                        $scope.pathimage = 'Split%20&%20Settle/Split%20&%20Settle/SnS_3.png';
 
                         $scope.splittextone = 0;
                         $scope.splittexttwo = 0;
-                        $scope.splittextthree = 1;
-                        $scope.splittextfour = 0;
+                        $scope.splittextthree = 0;
+                        $scope.splittextfour = 1;
                         $scope.splitsettleimageonefading=0;
                         $scope.splitsettleimagetwofading=0;
-                        $scope.splitsettleimagethreefading=1;
-                        $scope.splitsettleimagefourfading=0;
+                        $scope.splitsettleimagethreefading=0;
+                        $scope.splitsettleimagefourfading=1;
 
-                        $timeout(function () {
+                        $scope.splitandsettletimerone=  $timeout(function () {
                             console.log(2);
-                            $scope.pathimage = 'Split%20&%20Settle/Split%20&%20Settle/SnS_4.png';
 
-                            $scope.splittextone = 0;
+                            $scope.splittextone = 1;
                             $scope.splittexttwo = 0;
                             $scope.splittextthree = 0;
-                            $scope.splittextfour = 1;
-                            $scope.splitsettleimageonefading=0;
+                            $scope.splittextfour = 0;
+                            $scope.splitsettleimageonefading=1;
                             $scope.splitsettleimagetwofading=0;
                             $scope.splitsettleimagethreefading=0;
-                            $scope.splitsettleimagefourfading=1;
-                        }, 4000);
-                    }, 4000);
-                }, 4000);
-            }, 4000);
-
-
+                            $scope.splitsettleimagefourfading=0;
+                            $scope.callAtInterval();
+                        }, 1200);
+                    }, 1200);
+                }, 1200);
+            }, 1200);
         }
 
 
-        $interval(function () {
-                $scope.callAtInterval();
-            },
-            16000);
+
+        $scope.plantextone = 0;
+        $scope.plantexttwo = 0;
+        $scope.plantextthree=0;
+        $scope.plantextfour=0;
+
+        $scope.planimageonefading=0;
+        $scope.planimagetwofading=0;
+        $scope.planimagethreefading=0;
+        $scope.planimagefourfading=0;
+
+        $scope.plantimerone = null;
+
+        $scope.planimageonefading=1;
+        $scope.plantextone = 1;
+
+        //Timer start function.
+        $scope.StartTimerPlay = function () {
+            $scope.planplayfade=1;
+
+            $scope.callAtIntervalPlay();
+
+        };
+
+
+        //Timer stop function.
+        $scope.StopTimerPlay = function () {
+
+            $scope.planplayfade=0;
+
+            $timeout.cancel($scope.plantimerone);
+            $scope.plantextone = 1;
+            $scope.plantexttwo = 0;
+            $scope.plantextthree=0;
+            $scope.plantextfour=0;
+
+            $scope.planimageonefading=1;
+            $scope.planimagetwofading=0;
+            $scope.planimagethreefading=0;
+            $scope.planimagefourfading=0;
+
+        };
+
+
+        $scope.callAtIntervalPlay = function () {
+
+            $scope.plantimerone =  $timeout(function () {
+                console.log(1);
+
+                $scope.plantextone = 0;
+                $scope.plantexttwo = 1;
+                $scope.plantextthree = 0;
+                $scope.plantextfour = 0;
+                $scope.planimageonefading=0;
+                $scope.planimagetwofading=1;
+                $scope.planimagethreefading=0;
+                $scope.planimagefourfading=0;
+
+                $scope.plantimerone = $timeout(function () {
+                    console.log(2);
+
+                    $scope.plantextone = 0;
+                    $scope.plantexttwo =0;
+                    $scope.plantextthree = 1;
+                    $scope.plantextfour = 0;
+                    $scope.planimageonefading=0;
+                    $scope.planimagetwofading=0;
+                    $scope.planimagethreefading=1;
+                    $scope.planimagefourfading=0;
+
+                    $scope.plantimerone=  $timeout(function () {
+                        console.log(2);
+
+                        $scope.plantextone = 0;
+                        $scope.plantexttwo = 0;
+                        $scope.plantextthree = 0;
+                        $scope.plantextfour = 1;
+                        $scope.planimageonefading=0;
+                        $scope.planimagetwofading=0;
+                        $scope.planimagethreefading=0;
+                        $scope.planimagefourfading=1;
+
+                        $scope.plantimerone=  $timeout(function () {
+                            console.log(2);
+
+                            $scope.plantextone = 1;
+                            $scope.plantexttwo = 0;
+                            $scope.plantextthree = 0;
+                            $scope.plantextfour = 0;
+                            $scope.planimageonefading=1;
+                            $scope.planimagetwofading=0;
+                            $scope.planimagethreefading=0;
+                            $scope.planimagefourfading=0;
+                            $scope.callAtIntervalPlay();
+                        }, 1200);
+                    }, 1200);
+                }, 1200);
+            }, 1200);
+        }
+
+
+
 
         $timeout(function () {
             $scope.linewidth = !$scope.linewidth;
@@ -99,7 +229,6 @@ angular.module('poolin.controllers', [])
             $scope.lightbackground=1;
             $scope.navcolour=1;
             $scope.iconbarchange=1;
-            $scope.callAtInterval();
 
         },1000);
 

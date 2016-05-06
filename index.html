@@ -127,7 +127,7 @@
                 <a href="https://play.google.com/store/apps/details?id=com.app.mypoolin&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web">
 
                     <button class="btn storebutton">
-                        <img class="googlestoreimage" src="_include/img/Google_Play_button.png" style="width:100px">
+                        <img class="googlestoreimage" src="images/playstore_white.png" style="width:100px">
                     </button>
 
                 </a>
@@ -136,7 +136,7 @@
                 errer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web" style="margin-left:30px">
 
                     <button class="btn storebutton">
-                        <img class="appstoreimage" src="_include/img/appstore-button.png" style="width:97px;">
+                        <img class="appstoreimage" src="images/appstore-white.png" style="width:97px;">
                     </button>
 
                 </a>
@@ -173,7 +173,7 @@
         </div>
     </div>
 
-    <div class="row" style="height: 400px;">
+    <div class="row" style="height: 440px;">
 
         <!--<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 planandplay text-center"
              style="height: 100%;border-right:1px solid black">
@@ -190,21 +190,29 @@
             <img src="images/Flow_Plan.gif" style="width: 200px">
         </div>-->
 
-        <div class="col-md-6 col-lg-6"
-             style="background-color:white;height:100%;border-right:1px solid black;padding-top:20px">
+        <div class="col-md-6 col-lg-6 splitsettledefaultbackground"
+             style="height:100%;
+             border-right:1px solid black;
+             padding-top:20px"
+             ng-mouseenter="StartTimerSettle()"
+             ng-mouseleave="StopTimerSettle()"
+             ng-class="{splitsettlefadebackground:splitsettlefade}">
 
             <div class="row text-center">
-                <a style="text-decoration: none;font-family: 'titillium web',sans-serif;
-            font-size: 1.7em;letter-spacing:1px;font-weight:100;color:black">
+
+                <a style="text-decoration: none;  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+;
+            font-size: 1.7em;letter-spacing:1px;font-weight:100;color:black;">
                     Split & Settle
                 </a>
+
             </div>
 
 
             <div class="row" style="height:100%">
 
                 <div class="col-md-6 col-lg-6 text-center"
-                     style="background-color:white;height:100%;padding-top:30px">
+                     style="height:100%;padding-top:30px">
 
                     <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_1.png" class="splitsettleimagedefault"
                          ng-class="{splitsettleimageonefade:splitsettleimageonefading}">
@@ -218,7 +226,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-6"
-                     style="background-color: white;height:100%;padding-top:30px;padding-left:80px">
+                     style="height:100%;padding-top:30px;padding-left:80px">
 
                     <span class="splitsettletextdefault" style="display:block"
                           ng-class="{splitsettletextonefade:splittextone}">
@@ -246,7 +254,8 @@
         </div>
 
 
-        <div class="col-md-6 col-lg-6" style="background-color: white;height:100%;padding-top:20px">
+        <div class="col-md-6 col-lg-6 planplaydefaultbackground " style="height:100%;padding-top:20px" ng-mouseenter="StartTimerPlay()"
+                ng-mouseleave="StopTimerPlay()" ng-class="{planplayfadebackground:planplayfade}">
             <div class="row text-center">
 
             <a style="text-decoration: none;  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -258,49 +267,50 @@
             </div>
 
             <div class="row" style="height:100%">
+                <div class="col-md-6 col-lg-6 text-center"
+                     style="height:100%;padding-top:30px">
 
-                <div class="col-md-6 col-lg-6 text-center" style="background-color:white;height:100%;padding-top:30px">
 
-
-                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_1.png" class="splitsettleimagedefault"
-                         ng-class="{splitsettleimageonefade:splitsettleimageonefading}">
-                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_2.png" class="splitsettleimagedefault"
-                         ng-class="{splitsettleimagetwofade:splitsettleimagetwofading}">
-                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_3.png" class="splitsettleimagedefault"
-                         ng-class="{splitsettleimagethreefade:splitsettleimagethreefading}">
-                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_4.png" class="splitsettleimagedefault"
-                         ng-class="{splitsettleimagefourfade:splitsettleimagefourfading}">
-
+                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_1.png" class="planimagedefault"
+                         ng-class="{planimageonefade:planimageonefading}">
+                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_2.png" class="planimagedefault"
+                         ng-class="{planimagetwofade:planimagetwofading}">
+                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_3.png" class="planimagedefault"
+                         ng-class="{planimagethreefade:planimagethreefading}">
+                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_4.png" class="planimagedefault"
+                         ng-class="{planimagefourfade:planimagefourfading}">
 
                 </div>
 
                 <div class="col-md-6 col-lg-6"
-                     style="background-color:white;height:100%;padding-top:30px;padding-left:80px">
+                     style="height:100%;padding-top:30px;padding-left:80px">
 
-                    <span class="splitsettletextdefault" style="display:block"
-                          ng-class="{splitsettletextonefade:splittextone}">
+                    <span class="plantextdefault" style="display:block"
+                          ng-class="{plantextonefade:plantextone}">
                          1. Choose Amount
                     </span>
 
-                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
-                          ng-class="{splitsettletexttwofade:splittexttwo}">
+                    <span class="plantextdefault" style="display:block;margin-top:70px"
+                          ng-class="{plantexttwofade:plantexttwo}">
                           2. Create Pool
                     </span>
 
-                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
-                          ng-class="{splitsettletexttwofade:splittextthree}">
+                    <span class="plantextdefault" style="display:block;margin-top:70px"
+                          ng-class="{plantexttwofade:plantextthree}">
                           3. Manage Friends
                     </span>
 
-                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
-                          ng-class="{splitsettletexttwofade:splittextfour}">
+                    <span class="plantextdefault" style="display:block;margin-top:70px"
+                          ng-class="{plantexttwofade:plantextfour}">
                           4. Payment to Bank
                      </span>
 
                 </div>
 
+
             </div>
         </div>
+
     </div>
 
 

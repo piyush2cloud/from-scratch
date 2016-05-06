@@ -311,7 +311,7 @@
 
 .storebutton{
     border:1px solid black;
-    background-color:white;
+    background-color:black;
     width:150px;
 }
 
@@ -336,7 +336,7 @@
     background-color:white;
     border:1px solid #f5a623;
     height:50px;
-    width:247px;
+    width:340px;
     color:#f5a623;
     font-family:'Titillium Web', sans-serif;
     letter-spacing:1px;
@@ -485,4 +485,147 @@ body{
 .splitsettleimagefourfade {
     display:initial;
     opacity:1;
+}
+
+.splitsettletextdefault {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    opacity: 0;
+    color:#0c77ad;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:18px;
+    font-weight: 900;
+    letter-spacing:0.2px;
+    zoom:1;
+
+}
+
+.splitsettletextonefade {
+    opacity: 1;
+}
+
+.splitsettletexttwofade {
+    opacity: 1;
+}
+
+.splitsettletextthreefade {
+    opacity: 1;
+}
+
+.splitsettletextfourfade {
+    opacity: 1;
+}
+
+.splitsettleimagedefault {
+    width: 180px;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+    display:none;
+    opacity:0;
+}
+
+.splitsettleimageonefade {
+    display:initial;
+    opacity:1;
+}
+
+.splitsettleimagetwofade {
+    display:initial;
+    opacity:1;
+}
+
+.splitsettleimagethreefade {
+    display:initial;
+    opacity:1;
+}
+
+.splitsettleimagefourfade {
+    display:initial;
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+.plantextdefault {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    opacity: 0;
+    color:#0c77ad;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:18px;
+    font-weight: 900;
+    letter-spacing:0.2px;
+    zoom:1;
+
+}
+
+.plantextonefade {
+    opacity: 1;
+}
+
+.plantexttwofade {
+    opacity: 1;
+}
+
+.plantextthreefade {
+    opacity: 1;
+}
+
+.plantextfourfade {
+    opacity: 1;
+}
+
+.planimagedefault {
+    width: 180px;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+    display:none;
+    opacity:0;
+}
+
+.planimageonefade {
+    display:initial;
+    opacity:1;
+}
+
+.planimagetwofade {
+    display:initial;
+    opacity:1;
+}
+
+.planimagethreefade {
+    display:initial;
+    opacity:1;
+}
+
+.planimagefourfade {
+    display:initial;
+    opacity:1;
+}
+
+.splitsettledefaultbackground{
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+    background-color: #0c77ad;
+}
+
+.planplaydefaultbackground{
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+    background-color: #0c77ad;
+
+}
+
+.splitsettlefadebackground{
+    background-color: white;
+}
+
+.planplayfadebackground{
+    background-color: white;
+
 }
