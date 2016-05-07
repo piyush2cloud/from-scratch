@@ -1,6 +1,6 @@
 angular.module('poolin.controllers', [])
 
-    .controller("myCtrl", function ($scope, $timeout, $window, $interval) {
+    .controller("myCtrl", function ($scope, $timeout, $window, $interval,$document) {
 
         $scope.linewidth = 0;
         $scope.hideline = 0;
@@ -26,10 +26,13 @@ angular.module('poolin.controllers', [])
 
         $scope.splitsettleimageonefading=1;
         $scope.splittextone = 1;
+        $scope.splitandsettletextchange=0;
 
         //Timer start function.
         $scope.StartTimerSettle = function () {
             $scope.splitsettlefade=1;
+            $scope.splitandsettletextchange=1;
+
             $scope.callAtInterval();
 
         };
@@ -39,6 +42,8 @@ angular.module('poolin.controllers', [])
         $scope.StopTimerSettle = function () {
 
             $scope.splitsettlefade=0;
+            $scope.splitandsettletextchange=0;
+
 
             $timeout.cancel($scope.splitandsettletimerone);
             $scope.splittextone = 1;
@@ -104,10 +109,10 @@ angular.module('poolin.controllers', [])
                             $scope.splitsettleimagethreefading=0;
                             $scope.splitsettleimagefourfading=0;
                             $scope.callAtInterval();
-                        }, 1200);
-                    }, 1200);
-                }, 1200);
-            }, 1200);
+                        }, 2000);
+                    }, 2000);
+                }, 2000);
+            }, 2000);
         }
 
 
@@ -127,9 +132,12 @@ angular.module('poolin.controllers', [])
         $scope.planimageonefading=1;
         $scope.plantextone = 1;
 
+        $scope.planandplaytextchange=0;
+
         //Timer start function.
         $scope.StartTimerPlay = function () {
             $scope.planplayfade=1;
+            $scope.planandplaytextchange=1;
 
             $scope.callAtIntervalPlay();
 
@@ -140,6 +148,8 @@ angular.module('poolin.controllers', [])
         $scope.StopTimerPlay = function () {
 
             $scope.planplayfade=0;
+            $scope.planandplaytextchange=0;
+
 
             $timeout.cancel($scope.plantimerone);
             $scope.plantextone = 1;
@@ -205,24 +215,12 @@ angular.module('poolin.controllers', [])
                             $scope.planimagethreefading=0;
                             $scope.planimagefourfading=0;
                             $scope.callAtIntervalPlay();
-                        }, 1200);
-                    }, 1200);
-                }, 1200);
-            }, 1200);
+                        }, 2000);
+                    }, 2000);
+                }, 2000);
+            }, 2000);
         }
 
-
-
-
-        $timeout(function () {
-            $scope.linewidth = !$scope.linewidth;
-            $scope.hideline = !$scope.hideline;
-        }, 500);
-
-        $timeout(function () {
-            $scope.showlogo = 1;
-
-        }, 3000);
 
         $timeout(function () {
             $scope.showtagline = 1;
@@ -240,19 +238,17 @@ angular.module('poolin.controllers', [])
         $scope.showline = 1;
         $scope.hideline = 0;
 
-        $scope.fadeRight = function () {
-            $scope.secondDivHide = 1;
-            $scope.firstDivShow = 1;
-            $scope.firstDivHide = 0;
-        }
-
-        $scope.fadeLeft = function () {
-            $scope.firstDivHide = 1;
-            $scope.secondDivShow = 1;
-            $scope.secondDivHide = 0;
-        }
-
         $scope.iconbarchange=0;
+
+        $scope.navLogoClick = function () {
+            var top = 0;
+            var duration = 2; //milliseconds
+
+            //Scroll to the exact position
+            $document.scrollTop(top, duration).then(function () {
+                console && console.log('You just scrolled to the top!');
+            });
+        };
 
         $(document).ready(function () {
             $(window).scroll(function () { // check if scroll event happened

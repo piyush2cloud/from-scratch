@@ -5,6 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
+<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
 
@@ -22,8 +23,12 @@
 
 <div class="navbar navbar-fixed-top defaultnavcolor" ng-class="{changenavcolour : navcolour}">
 
+
+    <a ng-click="navLogoClick()" href="">
+
     <img src="_include/img/Logo_Blue.png" class="starttimerlogo" style="width:34px;margin-top:4px;margin-left:10px">
     <img src="_include/img/Logo_White.png" class="endtimerlogo" style="width:34px;margin-top:4px;margin-left:10px">
+    </a>
 
 
     <!--
@@ -110,7 +115,7 @@
 
             <!--  <span class="firstline center-block" ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>-->
 
-            <div class="text-center taglinefade" ng-class="{taglineshow:showtagline}" style="margin-top:15px">
+            <div class="text-center taglinefade" ng-class="{taglineshow:showtagline}" style="margin-top:35px">
 
                 <input id="phoneNumber" type="phone" placeholder="9999-99999" maxlength="10">
 
@@ -122,28 +127,24 @@
 
             </div>
 
-            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top:24px">
+            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top:35px">
 
                 <a href="https://play.google.com/store/apps/details?id=com.app.mypoolin&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web">
 
-                    <button class="btn storebutton">
-                        <img class="googlestoreimage" src="images/playstore_white.png" style="width:100px">
-                    </button>
+                        <img class="googlestoreimage" src="images/playstore-black-button.jpg" style="width:162px">
 
                 </a>
 
                 <a href="https://itunes.apple.com/in/app/mypoolin-plan-pay-friends/id1032623508?mt=8&amp;ref
                 errer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web" style="margin-left:30px">
 
-                    <button class="btn storebutton">
-                        <img class="appstoreimage" src="images/appstore-white.png" style="width:97px;">
-                    </button>
+                        <img class="appstoreimage" src="images/apptore-black-button.jpg" style="width:162px;">
 
                 </a>
 
             </div>
 
-            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 18px">
+            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 10px">
 
                 <div style="font-family: 'Titillium Web'; letter-spacing:5px; padding-top:1em;color:black;font-weight:900">
                     ..............................................
@@ -200,9 +201,7 @@
 
             <div class="row text-center">
 
-                <a style="text-decoration: none;  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-;
-            font-size: 1.7em;letter-spacing:1px;font-weight:100;color:black;">
+                <a class="splitandsettletext" style="text-decoration:none" ng-class="{splitandsettletextchange:splitandsettletextchange}">
                     Split & Settle
                 </a>
 
@@ -228,8 +227,7 @@
                 <div class="col-md-6 col-lg-6"
                      style="height:100%;padding-top:30px;padding-left:80px">
 
-                    <span class="splitsettletextdefault" style="display:block"
-                          ng-class="{splitsettletextonefade:splittextone}">
+                    <span class="splitsettletextdefault" style="display:block" ng-class="{splitsettletextonefade:splittextone}">
                          1. Choose Amount
                     </span>
 
@@ -258,9 +256,7 @@
                 ng-mouseleave="StopTimerPlay()" ng-class="{planplayfadebackground:planplayfade}">
             <div class="row text-center">
 
-            <a style="text-decoration: none;  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-;
-            font-size: 1.7em;letter-spacing:1px;font-weight:100;color:black;">
+            <a class="planandplaytext" style="text-decoration:none" ng-class="{planandplaytextchange:planandplaytextchange}">
                 Plan & Play
             </a>
 

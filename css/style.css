@@ -1,69 +1,3 @@
-.default {
-    -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
-    transition: opacity 2s;
-    opacity: 1;
-
-}
-
-.default:hover {
-    background-color: #0059bc;
-}
-
-.fade {
-    -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
-    transition: opacity 2s;
-    opacity: 0;
-}
-
-.outerdiv {
-    height: 100vh;
-}
-
-.firstdiv {
-    background-color:red;
-    height: 100%;
-}
-
-.seconddiv {
-    background-color: darkslateblue;
-    height: 100%;
-}
-
-.firstline {
-
-    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s, opacity 1s;
-    background-color:white;
-    width: 0px;  !important;
-    height: 2px;
-    opacity: 0;
-}
-
-.margin-line-top {
-    margin-top: 10px !important;
-}
-
-.firstlineaniamte {
-    width: 200px;
-!important;
-}
-
-.fadeline {
-    opacity: 1;
-}
-
-.logofade {
-    -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
-    transition: opacity 1s;
-    opacity: 0;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.logoshow {
-    opacity: 1;
-}
-
 .taglinefade {
     -webkit-transition: opacity 3s; /* For Safari 3.1 to 6.0 */
     transition: opacity 3s;
@@ -249,7 +183,7 @@
 
 #phoneNumber {
     text-align: center;
-    width: 152px;
+    width: 160px;
     height: 48px;
     border-radius: 5px;
     color: #0c77ad;
@@ -260,7 +194,7 @@
     background-color: white;
     border: 1px solid #f5a623;
     height: 48px;
-    width: 152px;
+    width: 160px;
     border-radius:5px;
     margin-left:30px;
     color:#f5a623;
@@ -336,7 +270,7 @@
     background-color:white;
     border:1px solid #f5a623;
     height:50px;
-    width:336px;
+    width:360px;
     color:#f5a623;
     font-family:'Titillium Web', sans-serif;
     letter-spacing:1px;
@@ -431,10 +365,10 @@ body{
 }
 
 .splitsettletextdefault {
+    color:#0c77ad;
     -webkit-transition: all 2s;
     transition: all 2s;
     opacity: 0;
-    color:#0c77ad;
     font-family: 'Titillium Web', sans-serif;
     font-size:18px;
     font-weight: 900;
@@ -458,6 +392,8 @@ body{
 .splitsettletextfourfade {
     opacity: 1;
 }
+
+
 
 .splitsettleimagedefault {
     width: 180px;
@@ -486,66 +422,6 @@ body{
     display:initial;
     opacity:1;
 }
-
-.splitsettletextdefault {
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    opacity: 0;
-    color:#0c77ad;
-    font-family: 'Titillium Web', sans-serif;
-    font-size:18px;
-    font-weight: 900;
-    letter-spacing:0.2px;
-    zoom:1;
-
-}
-
-.splitsettletextonefade {
-    opacity: 1;
-}
-
-.splitsettletexttwofade {
-    opacity: 1;
-}
-
-.splitsettletextthreefade {
-    opacity: 1;
-}
-
-.splitsettletextfourfade {
-    opacity: 1;
-}
-
-.splitsettleimagedefault {
-    width: 180px;
-    -webkit-transition: all 2s linear;
-    transition: all 2s linear;
-    display:none;
-    opacity:0;
-}
-
-.splitsettleimageonefade {
-    display:initial;
-    opacity:1;
-}
-
-.splitsettleimagetwofade {
-    display:initial;
-    opacity:1;
-}
-
-.splitsettleimagethreefade {
-    display:initial;
-    opacity:1;
-}
-
-.splitsettleimagefourfade {
-    display:initial;
-    opacity:1;
-}
-
-
-
 
 
 
@@ -611,13 +487,13 @@ body{
 .splitsettledefaultbackground{
     -webkit-transition: all 1s linear;
     transition: all 1s linear;
-    background-color: #0c77ad;
+    background-color: #2e3842;
 }
 
 .planplaydefaultbackground{
     -webkit-transition: all 1s linear;
     transition: all 1s linear;
-    background-color: #0c77ad;
+    background-color: #2e3842;
 
 }
 
@@ -628,4 +504,34 @@ body{
 .planplayfadebackground{
     background-color: white;
 
+}
+
+.splitandsettletext{
+    text-decoration:none;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.7em;
+    letter-spacing:1px;
+    font-weight:100;
+    color:white;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+.splitandsettletextchange{
+    color: black;
+}
+
+.planandplaytext{
+    text-decoration:none;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.7em;
+    letter-spacing:1px;
+    font-weight:100;
+    color:white;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+.planandplaytextchange{
+    color: black;
 }

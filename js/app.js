@@ -1,2 +1,2 @@
-angular.module("poolin", ['poolin.controllers']);
+angular.module("poolin", ['poolin.controllers','duScroll']);
 
