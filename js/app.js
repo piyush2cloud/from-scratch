@@ -1,44 +1,38 @@
-var mainApp = angular.module("poolin", ['poolin.controllers','duScroll','ngRoute']);
+var mainApp = angular.module("poolin", ['poolin.controllers', 'duScroll']);
 
-mainApp.config(['$routeProvider', function($routeProvider) {
-    $routeProvider.
 
-        when('/howitworks', {
-            templateUrl: 'html/howitworks.html',
-            controller: 'howworkCtrl'
-        }).
+mainApp.directive("scroll", function ($window) {
+    return function (scope, element, attrs) {
 
-        when('/home', {
-            templateUrl: 'html/homepage.html',
-            controller: 'myCtrl'
-        }).
+        angular.element($window).bind("scroll", function () {
+            console.log(this.pageYOffset);
 
-        when('/getstarted', {
-            templateUrl: 'html/getstarted.html',
-            controller: 'getstartCtrl'
-        }).
+            if (this.pageYOffset > 350) {
 
-        when('/faqs', {
-            templateUrl: 'html/faqs.html',
-            controller: 'faqCtrl'
-        }).
+                scope.navbarbackgroundcolourwhite = 0;
+                scope.navbarbackgroundcolourdark = 1;
 
-        when('/business', {
-            templateUrl: 'html/business.html',
-            controller: 'businessCtrl'
-        }).
+                scope.starttimernodisplaynone = 1;
+                scope.starttimernodisplaytrue = 0;
 
-        when('/accounts', {
-            templateUrl: 'html/business.html',
-            controller: 'accountCtrl'
-        }).
+                scope.endtimerlogodisplaytrue = 1;
+                scope.endtimerlogodisplaynone = 0;
 
-        when('/examples', {
-            templateUrl: 'html/examples.html',
-            controller: 'exampleCtrl'
-        }).
+            }
 
-        otherwise({
-            redirectTo: '/home'
+            else {
+                scope.navbarbackgroundcolourwhite = 1;
+                scope.navbarbackgroundcolourdark = 0;
+
+                scope.starttimernodisplaynone = 0;
+                scope.endtimerlogodisplaytrue = 0;
+
+                scope.starttimernodisplaytrue = 1;
+                scope.endtimerlogodisplaynone = 1;
+            }
+
+
+            scope.$apply();
         });
-}]);
+    };
+});

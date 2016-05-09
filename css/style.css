@@ -174,7 +174,7 @@
 }
 
 .changenavcolor {
-    background-color: yellow;  !important;
+    background-color: white;  !important;
 }
 
 .hidelogo{
@@ -281,6 +281,10 @@
     color:white;
 }
 
+.defaultlogostyle{
+
+}
+
 .starttimerlogo {
     display:initial;
 }
@@ -299,6 +303,16 @@
 body{
     padding-top:50px;
 }
+
+.makebodyblur {
+    -webkit-filter: invert(100%);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
 
 .howitworks{
 
@@ -532,4 +546,38 @@ body{
 
 .planandplaytextchange{
     color: black;
+}
+
+
+.navbarbackgroundcolourdark{
+    background-color: #5585B5;
+}
+
+.hidelogoshow {
+    opacity: 1;
+}
+
+.starttimernodisplaynone{
+    display: none;
+}
+
+.endtimerlogodisplaytrue{
+    display: initial;
+}
+
+.navbarbackgroundcolourwhite {
+    background-color: #FFFFFF;
+}
+
+.hidelogonotshow {
+    opacity: 0;
+}
+
+
+.starttimernodisplaytrue{
+    display: initial;
+}
+
+.endtimerlogodisplaynone{
+    display: none;
 }

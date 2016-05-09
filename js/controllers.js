@@ -17,7 +17,19 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
     $scope.splittextthree = 0;
     $scope.splittextfour = 0;
 
-    $scope.splitsettleimageonefading = 0;
+
+    $scope.makebodyblur = 0;
+
+    $scope.makebackgroundblur = function(){
+    $scope.makebodyblur = 1;
+    }
+
+    $scope.makebackgroundnormal = function(){
+        $scope.makebodyblur = 0;
+    }
+
+
+$scope.splitsettleimageonefading = 0;
     $scope.splitsettleimagetwofading = 0;
     $scope.splitsettleimagethreefading = 0;
     $scope.splitsettleimagefourfading = 0;
@@ -164,6 +176,7 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
     };
 
 
+
     $scope.callAtIntervalPlay = function () {
 
         $scope.plantimerone = $timeout(function () {
@@ -220,13 +233,17 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
         }, 2000);
     }
 
+    $scope.starttimernodisplaytrue=1;  //bluelogo
+    $scope.starttimernodisplaynone=0;
+
+    $scope.endtimerlogodisplaynone=1;  //whitelogo
+    $scope.endtimerlogodisplaytrue=0;
 
     $timeout(function () {
         $scope.showtagline = 1;
         $scope.lightbackground = 1;
-        $scope.navcolour = 1;
+        $scope.navbarbackgroundcolourwhite=1;
         $scope.iconbarchange = 1;
-
     }, 1000);
 
     $scope.firstDivHide = 0;
@@ -249,7 +266,12 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
         });
     };
 
-    $(document).ready(function () {
+
+
+
+
+
+   /* $(document).ready(function () {
         $(window).scroll(function () { // check if scroll event happened
             if ($(document).scrollTop() > 350) { // check if user scrolled more than 50 from top of the browser window
                 $(".navbar-fixed-top").css("background-color", "#5585B5"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
@@ -265,39 +287,7 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
 
             }
         });
-    });
+    });*/
 
 });
 
-app.controller("howworkCtrl", function ($scope) {
-
-    $scope.message = "howworks";
-});
-
-app.controller("businessCtrl", function ($scope) {
-    $scope.message = "businessctrl";
-
-});
-
-
-app.controller("faqCtrl", function ($scope) {
-    $scope.message = "faqctrl";
-
-});
-
-
-app.controller("getstartCtrl", function ($scope) {
-    $scope.message = "getstartctrl";
-
-});
-
-
-app.controller("accountCtrl", function ($scope) {
-    $scope.message = "accountctrl";
-
-});
-
-app.controller("exampleCtrl", function ($scope) {
-    $scope.message = "examplesctlr,";
-
-});
