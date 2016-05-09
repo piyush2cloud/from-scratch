@@ -56,37 +56,65 @@
 
             <ul class="nav navbar-stacked">
 
-                <li class="active howitworks">
+                <li class="howitworks">
+                    <a class="howitworks" href="#home" style="font-family:'Titillium Web,',sans-serif">
+                      <span class="glyphicon glyphicon-home" >
+                           HOME
+                      </span>
+                    </a>
+                </li>
+
+                <li class="howitworks">
                     <a class="howitworks" href="#howitworks" style="font-family:'Titillium Web,',sans-serif">
-                        HOW IT WORKS
+                        <span class="glyphicon glyphicon-wrench" style="word-spacing:0px">
+                            HOW-IT-WORKS
+                        </span>
                     </a>
                 </li>
 
                 <li class="examples">
                     <a href="#examples" class="examples" style="font-family: 'Titillium Web', sans-serif">
-                        EXAMPLES
+                        <span class="glyphicon glyphicon-signal" style="word-spacing:0px">
+                            EXAMPLES
+                        </span>
                     </a>
                 </li>
 
                 <li class="getstarted">
-                    <a href="#getstarted" class="getstarted" style="font-family: 'Titillium Web', sans-serif">GET
-                        STARTED</a>
+                    <a href="#getstarted" class="getstarted" style="font-family: 'Titillium Web', sans-serif">
+                        <span class="glyphicon glyphicon-share" style="word-spacing:0px">
+                            GET-STARTED
+                        </span>
+                    </a>
                 </li>
 
                 <li class="faqs">
-                    <a href="#faqs" class="faqs" style="font-family: 'Titillium Web', sans-serif">FAQS</a>
+                    <a href="#faqs" class="faqs" style="font-family: 'Titillium Web', sans-serif">
+                       <span class="glyphicon glyphicon-question-sign" style="word-spacing:0px">
+                            FAQS
+                        </span>
+                    </a>
                 </li>
 
                 <li class="forbusinesses">
-                    <a href="#business" class="forbusinesses" style="font-family: 'Titillium Web', sans-serif">FOR
-                        BUSINESSES</a>
+                    <a href="#business" class="forbusinesses" style="font-family: 'Titillium Web', sans-serif">
+                        <span class="glyphicon glyphicon-user" style="word-spacing:0px">
+                            BUSINESSES
+                        </span>
+                    </a>
                 </li>
 
                 <li class="myaccount">
-                    <a href="#accounts" class="myaccount" style="font-family: 'Titillium Web', sans-serif">MY ACCOUNT</a>
+                    <a href="#accounts" class="myaccount" style="font-family: 'Titillium Web', sans-serif">
+                         <span class="glyphicon glyphicon-briefcase" style="word-spacing:0px">
+                            MY_ACCOUNT
+                        </span>
+                    </a>
                 </li>
 
             </ul>
+
+                <img src="images/Logo_Mypoolin_white.png" style="width:125px;margin-top:280px;padding-left:20px">
         </div>
     </div>
 
@@ -94,11 +122,10 @@
 
 
 <!-- Begin page content -->
-<div class="container-fluid">
+<div class="container-fluid" style="padding-left:0px;padding-right:0px">
+    <div ng-view>
 
-    <div ng-view></div>
-
-
+    </div>
 </div>
 
 
