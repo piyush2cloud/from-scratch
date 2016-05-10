@@ -22,10 +22,13 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
 
     $scope.makebackgroundblur = function(){
     $scope.makebodyblur = 1;
+        $scope.howitworksanimate=1;
     }
 
     $scope.makebackgroundnormal = function(){
         $scope.makebodyblur = 0;
+        $scope.howitworksanimate=0;
+
     }
 
 
@@ -267,27 +270,74 @@ $scope.splitsettleimageonefading = 0;
     };
 
 
+    $scope.showsliderone = 1;
+    $scope.hidesliderone = 0;
+
+    $scope.showslidertwo = 0;
+    $scope.hideslidertwo = 1;
+
+    $scope.showsliderthree = 0;
+    $scope.hidesliderthree = 1;
+
+    $scope.sliderimageanimate = 0;
+
+    $scope.changesliderone = function(){
+        $scope.sliderimageanimate = 1;
+
+        $scope.showsliderone = 0;
+        $scope.hidesliderone = 1;
+
+        $scope.showslidertwo = 1;
+        $scope.hideslidertwo = 0;
+
+        $scope.showsliderthree = 0;
+        $scope.hidesliderthree = 1;
+    }
+
+    $scope.changeslidertwo = function(){
+
+        $scope.showsliderone = 0;
+        $scope.hidesliderone = 1;
+
+        $scope.showslidertwo = 0;
+        $scope.hideslidertwo = 1;
+
+        $scope.showsliderthree = 1;
+        $scope.hidesliderthree = 0;
+    }
+
+    $scope.changesliderthree = function(){
+        $scope.showsliderone = 1;
+        $scope.hidesliderone = 0;
+
+        $scope.showslidertwo = 0;
+        $scope.hideslidertwo = 1;
+
+        $scope.showsliderthree = 0;
+        $scope.hidesliderthree = 1;
+    }
 
 
+    $scope.howitworksanimate = 0;
 
 
-   /* $(document).ready(function () {
-        $(window).scroll(function () { // check if scroll event happened
-            if ($(document).scrollTop() > 350) { // check if user scrolled more than 50 from top of the browser window
-                $(".navbar-fixed-top").css("background-color", "#5585B5"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                $(".hidelogo").css("opacity", "1"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                $(".starttimerlogo").css("display", "none"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                $(".endtimerlogo").css("display", "initial"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+    /* $(document).ready(function () {
+         $(window).scroll(function () { // check if scroll event happened
+             if ($(document).scrollTop() > 350) { // check if user scrolled more than 50 from top of the browser window
+                 $(".navbar-fixed-top").css("background-color", "#5585B5"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                 $(".hidelogo").css("opacity", "1"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                 $(".starttimerlogo").css("display", "none"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                 $(".endtimerlogo").css("display", "initial"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
 
-            } else {
-                $(".navbar-fixed-top").css("background-color", "#FFFFFF"); // if not, change it back to transparent
-                $(".hidelogo").css("opacity", "0"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                $(".starttimerlogo").css("display", "initial"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                $(".endtimerlogo").css("display", "none"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+             } else {
+                 $(".navbar-fixed-top").css("background-color", "#FFFFFF"); // if not, change it back to transparent
+                 $(".hidelogo").css("opacity", "0"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                 $(".starttimerlogo").css("display", "initial"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                 $(".endtimerlogo").css("display", "none"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
 
-            }
-        });
-    });*/
+             }
+         });
+     });*/
 
 });
 

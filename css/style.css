@@ -293,12 +293,6 @@
     display:none;
 }
 
-.sidebar{
-    border-top: 1px solid black;
-    top:0px;
-    height: 100%;
-    z-index:10;
-}
 
 body{
     padding-top:50px;
@@ -306,22 +300,78 @@ body{
 
 .makebodyblur {
     -webkit-filter: invert(100%);
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
 
 
 .howitworks{
-
     color:white;!important;
 }
 
 .howitworks:hover{
 
     color:black;
+}
+
+.howitworksanimate{
+    -webkit-animation-name: mymove; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: mymove;
+    animation-duration: 1s;
+}
+
+.sliderimageanimate{
+    -webkit-animation-name: sliderimagemove; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: sliderimagemove;
+    animation-duration: 4s;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes sliderimagemove {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Standard syntax */
+@keyframes sliderimagemove {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {
+        margin-top: 50px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {
+        margin-top: 50px;
+    }
+    to {
+        margin-top: 0px;
+    }
 }
 
 
@@ -580,4 +630,172 @@ body{
 
 .endtimerlogodisplaynone{
     display: none;
+}
+
+
+.sidebar{
+    top:0px;
+    height: 100%;
+}
+
+
+
+
+div.wave{
+    position: relative;
+    width: 100%;
+}
+div.wave > span{
+    float: left;
+    height: 200px;
+    animation: animate 1.5s ease-in-out alternate infinite;
+}
+div.wave > span:nth-child(1){
+    background-color: #2E3842;
+}
+div.wave > span:nth-child(2){
+    background-color: #5585B5;
+    animation-delay: .2s;
+}
+div.wave > span:nth-child(3){
+    background-color: #2E3842;
+    animation-delay: .4s;
+}
+div.wave > span:nth-child(4){
+    background-color: #5585b5;
+    animation-delay: .6s;
+}
+div.wave > span:nth-child(5){
+    background-color: #2E3842;
+    animation-delay: .8s;
+}
+div.wave > span:nth-child(6){
+    background-color: #5585B5;
+    animation-delay: 1s;
+}
+div.wave > span:nth-child(7){
+    background-color: #2E3842;
+    animation-delay: 1.2s;
+}
+div.wave > span:nth-child(8){
+    background-color: #5585B5;
+    animation-delay: 1.4s;
+}
+div.wave > span:nth-child(9){
+    background-color: #BBFFFF;
+    animation-delay: 1.6s;
+}
+div.wave > span:nth-child(10){
+    background-color: #FFE8E8;
+    animation-delay: 1.8s;
+}
+@keyframes animate{
+    to { height: 100px; }
+}
+
+
+#slides_control > div{
+    height: 200px;
+}
+img{
+    margin:auto;
+    width: 400px;
+}
+#slides_control {
+    position:absolute;
+    width: 400px;
+    left:50%;
+    top:20px;
+    margin-left:-200px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+    color: #181616;
+    font-weight: 100;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.5em;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+#dd{
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+.defaultsliderone{
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+
+}
+
+.defaultslidertwo{
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.defaultsliderthree{
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.showsliderone{
+    opacity: 1;
+    display: initial;
+
+
+}
+.showslidertwo{
+    opacity: 1;
+    display: initial;
+
+}
+
+.showsliderthree{
+    opacity: 1;
+    display: initial;
+
+}
+
+.hidesliderone{
+    opacity: 0;
+    display: none;
+
+}
+
+.hideslidertwo{
+    opacity: 0;
+    display: none;
+
+}
+
+.hidesliderthree{
+    opacity: 0;
+    display: none;
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="poolin">
+<html ng-app="poolin" xmlns:font-family="http://www.w3.org/1999/xhtml">
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -13,16 +13,17 @@
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="bower_components/bootstrap-sidebar/dist/css/sidebar.css">
 
-<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
 
 
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/animate.css">
 
 <body scroll ng-controller="myCtrl">
-
 
 <div class="navbar navbar-fixed-top defaultnavcolor"
      ng-class="{
@@ -61,86 +62,104 @@
     </button>
 
     <div class="row" style="z-index:10;background-color:red;position:absolute;height:100%">
-        <div class="col-xs-7 col-sm-3 col-md-3 sidebar sidebar-right sidebar-animate"
 
-             style="background-color:#5585B5;z-index:10;padding-left:0px;padding-right:0px;padding-top:30px">
+        <div class="col-xs-7 col-sm-2 col-md-2 sidebar sidebar-right sidebar-animate"
 
-            <ul class="nav navbar-stacked">
+             style="background-color:#2E3842;z-index:10;padding-left:0px;padding-right:0px;padding-top:30px">
 
-                <li class="howitworks">
-                    <a class="howitworks" href="#home" style="font-family:'Titillium Web,',sans-serif" ng-click="makebackgroundnormal()">
-                      <span class="glyphicon glyphicon-home" >
-                           HOME
-                      </span>
+            <span class="glyphicon glyphicon-remove" ng-click="makebackgroundnormal()"
+                  style="color:white;font-size:20px;margin-left:180px" data-toggle="sidebar"
+                  data-target=".sidebar-right">
+
+            </span>
+
+            <ul class="nav navbar-stacked" style="margin-top:20px">
+
+                <li class="howitworks" ng-class="{howitworksanimate:howitworksanimate}" data-toggle="sidebar"
+                    data-target=".sidebar-right">
+                    <a class="howitworks"
+                       data-toggle="sidebar"
+                       data-target=".sidebar-right"
+                       ng-class="{howitworksanimate:howitworksanimate}"
+                       style="font-family:'Titillium Web,',sans-serif"
+                       ng-click="makebackgroundnormal()"
+                       du-smooth-scroll="section-3" du-scrollspy
+                       >
+                        HOME
                     </a>
                 </li>
 
-                <li class="howitworks">
-                    <a class="howitworks" href="#howitworks" style="font-family:'Titillium Web,',sans-serif" ng-click="makebackgroundnormal()")>
-                        <span class="glyphicon glyphicon-wrench" style="word-spacing:0px">
-                            HOW-IT-WORKS
-                        </span>
+                <li class="howitworks" ng-class="{howitworksanimate:howitworksanimate}" >
+                    <a class="howitworks" style="font-family:'Titillium Web,',sans-serif"
+
+                       ng-click="makebackgroundnormal()" data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        HOW IT WORKS
                     </a>
                 </li>
 
-                <li class="examples">
-                    <a href="#examples" class="examples" style="font-family: 'Titillium Web', sans-serif" ng-click="makebackgroundnormal()">
-                        <span class="glyphicon glyphicon-signal" style="word-spacing:0px">
-                            EXAMPLES
-                        </span>
+                <li class="examples" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a class="examples" style="font-family: 'Titillium Web', sans-serif"
+                       ng-click="makebackgroundnormal()" data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        EXAMPLES
                     </a>
                 </li>
 
-                <li class="getstarted">
-                    <a href="#getstarted" class="getstarted" style="font-family: 'Titillium Web', sans-serif" ng-click="makebackgroundnormal()">
-                        <span class="glyphicon glyphicon-share" style="word-spacing:0px">
-                            GET-STARTED
-                        </span>
+                <li class="getstarted" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a class="getstarted" style="font-family: 'Titillium Web', sans-serif"
+                       ng-click="makebackgroundnormal()" data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        GET-STARTED
                     </a>
                 </li>
 
-                <li class="faqs">
-                    <a href="#faqs" class="faqs" style="font-family: 'Titillium Web', sans-serif" ng-click="makebackgroundnormal()">
-                       <span class="glyphicon glyphicon-question-sign" style="word-spacing:0px">
-                            FAQS
-                        </span>
+                <li class="faqs" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a class="faqs" ng-class="{howitworksanimate:howitworksanimate}" style="font-family:'Titillium Web', sans-serif;" ng-click="makebackgroundnormal()"
+                       data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        FAQS
                     </a>
                 </li>
 
-                <li class="forbusinesses">
-                    <a href="#business" class="forbusinesses" style="font-family: 'Titillium Web', sans-serif">
-                        <span class="glyphicon glyphicon-user" style="word-spacing:0px">
-                            BUSINESSES
-                        </span>
+                <li class="forbusinesses" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a href="#business" class="forbusinesses " style="font-family: 'Titillium Web', sans-serif"
+                       data-toggle="sidebar"
+                       data-target=".sidebar-right"
+                       du-smooth-scroll="section-3" du-scrollspy>
+                        BUSINESSES
                     </a>
                 </li>
 
-                <li class="myaccount">
-                    <a href="#accounts" class="myaccount" style="font-family: 'Titillium Web', sans-serif">
-                         <span class="glyphicon glyphicon-briefcase" style="word-spacing:0px">
-                            MY_ACCOUNT
-                        </span>
+                <li class="myaccount" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a href="#accounts" class="myaccount" style="font-family: 'Titillium Web', sans-serif"
+                       data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        MY_ACCOUNT
                     </a>
-                </li>
+                </li>-->
 
             </ul>
-
-            <img src="images/Logo_Mypoolin_white.png" style="width:125px;margin-top:280px;padding-left:15px">
         </div>
     </div>
 
 </div>
 
-
 <!-- Begin page content -->
-<div class="container-fluid" ng-click="makebackgroundnormal()" style="padding-left:0px;padding-right:0px" ng-class="{makebodyblur:makebodyblur}">
-    <div class="row topbackground" ng-class="{changetopbackground:lightbackground}" style="height: 500px;display: block;
-    border-bottom:1px solid black">
+<div class="container-fluid" ng-click="makebackgroundnormal()" style="padding-left:0px;padding-right:0px;">
+
+
+    <div class="row topbackground"
+         ng-class="{changetopbackground:lightbackground,makebodyblur:makebodyblur}"
+         style="height: 500px;display: block;
+          border-bottom:1px solid black;"
+            >
 
         <div class="main col-md-12">
 
             <!-- <span class="firstline margin-line-top center-block"
                    ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>-->
+
 
             <div class="center-block text-center taglinefade" ng-class="{taglineshow:showtagline}">
                 <!--<img src="images/Logo_Mypoolin_white.png" style="width: 155px;color:red">-->
@@ -156,6 +175,7 @@
             </div>
 
             <!--  <span class="firstline center-block" ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>-->
+
 
             <div class="text-center taglinefade" ng-class="{taglineshow:showtagline}" style="margin-top:35px">
 
@@ -176,7 +196,8 @@
                 </a>
 
                 <a href="https://itunes.apple.com/in/app/mypoolin-plan-pay-friends/id1032623508?mt=8&amp;ref
-                errer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web" style="margin-left:30px"><img class="appstoreimage" src="images/apptore-black-button.jpg" style="width:162px;">
+                errer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web" style="margin-left:30px"><img
+                        class="appstoreimage" src="images/apptore-black-button.jpg" style="width:162px;">
                 </a>
 
             </div>
@@ -350,9 +371,8 @@
 
     </div>
 
-    <hr style="border:1px dotted black;height:1px;width:100%">
 
-    <div class="row text-center" style="height: 250px;">
+    <div id="section-3" class="row text-center" style="height: 100%;margin-top:20px">
 
         <span>
         <h3 style="font-family: 'Titillium Web', sans-serif">Trusted and Secure. Our Payment Partners</h3>
@@ -363,18 +383,91 @@
         <img src="images/mobikwik-stamp.jpg" style="width:62px">
         <img src="images/paypal-stamp.jpg" style="width: 62px;">
 
-        <span>
-            <h3 style="font-family:'Titillium Web',sans-serif">
+        <div class="title-page">
+
+            <h2 style="margin-top:20px;font-weight:100;font-size:1.5em">
                 30000+ awesome people active already!
-            </h3>
-        </span>
+            </h2>
 
-        <h1 style="font-family: 'titillium web',sans-serif;font-weight: 500;letter-spacing:1px;font-size: 25px;color:black">
-            WHAT DO YOU WANT TO TODAY?
-        </h1>
+            <h2 id="sectionTitle" style="margin-top:20px">What do you wanna do today?</h2>
+        </div>
+
+        <div class="row defaultsliderone"
+             ng-click="changesliderone()"
+             ng-class="{sliderimageanimate:sliderimageanimate,showsliderone:showsliderone,hidesliderone:hidesliderone}">
+
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="_include/img/samples/collect.jpg" style="width:300px;">
+                <h3 class="profile-name">Split &amp; Settle</h3>
+                Split and collect money back from your friends<br/>
+                Settle your bills for dining, movies, parties &amp; more!
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="_include/img/samples/events.jpg" style="width:300px">
+                <h3 class="profile-name">Plan &amp; Pay</h3>
+                Plan anything with your group of friends<br/>
+                Everyone pays their own share for the plan!
+            </div>
+        </div>
+
+        <div class="row defaultslidertwo" ng-click="changeslidertwo()" ng-class="{showslidertwo:showslidertwo,hideslidertwo:hideslidertwo}">
+
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="_include/img/samples/dining.jpg" style="width:300px;">
+                <h3 class="profile-name">Close set of friends</h3>
+                Add your close friends from your email list<br/>
+                Split and assign shares for everyone.
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="_include/img/samples/gifting.jpg" style="width:300px">
+                <h3 class="profile-name">Open group of people</h3>
+                Not sure about how many people will join<br/>
+                Everyone pays their own share for the plan!
+            </div>
+        </div>
 
 
-    </div>
+        <div class="row defaultsliderthree" ng-click="changesliderthree()" ng-class="{showsliderthree:showsliderthree,hidesliderthree:hidesliderthree}">
+
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="_include/img/samples/others.jpg" style="width:300px;">
+                <h3 class="profile-name">Organizing an Event</h3>
+                Split and collect money back from your friends<br/>
+                Settle your bills for dining, movies, parties &amp; more!
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="_include/img/samples/project-2.jpg" style="width:300px">
+                <h3 class="profile-name">Open Gathering</h3>
+                Plan anything with your group of friends<br/>
+                Everyone pays their own share for the plan!
+            </div>
+        </div>
+
+
+
+<!--<div class='wave row' style="margin-top: 50px">
+    <span class="col-md-2 col-lg-2 text-center" style="color:white;;padding-top:50px;font-size:25px">
+        P
+    </span>
+    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px">
+        O
+    </span>
+    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px" >
+        O
+    </span>
+    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px">
+        L
+    </span>
+    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px">
+        I
+    </span>
+    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px">
+        N
+    </span>
+</div>-->
 
 
 </div>
