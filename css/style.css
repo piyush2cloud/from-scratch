@@ -14,28 +14,30 @@
         background-color: #0059bc;
     }
 
-    .paddingleftinput{
-        padding-left:52%; !important;
+    .paddingleftinput {
+        padding-left: 52%;
+    !important;
     }
 
-    .paddingstorelogo{
-        padding-left:52%; !important;
+    .paddingstorelogo {
+        padding-left: 52%;
+    !important;
     }
 
-    .startthewebdesktop{
-        padding-left:7%;
-        padding-right:7%;
+    .startthewebdesktop {
+        padding-left: 7%;
+        padding-right: 7%;
         border: 3px solid white;
         background-color: #2E3842;
-        height:50px;
+        height: 50px;
     }
 
-    .startwebmarginleft{
-        margin-left:10%;
+    .startwebmarginleft {
+        margin-left: 10%;
     }
 
-    .inputmargindesktop{
-        margin-left:55%;
+    .inputmargindesktop {
+        margin-left: 55%;
     }
 
 }
@@ -45,23 +47,27 @@
     .lele {
         background-color: #b9151b;
     }
-    .paddingleftinput{
-        padding-left:3%; !important;
-    }
-    .startthewebmargintop{
-        margin-top:10px;
-        text-align:center;
-    }
-    .startthewebdesktop{
-        padding-left:7%;
-        padding-right:7%;
-        border: 3px solid white;
-        background-color: #2E3842;
-        height:50px;
+
+    .paddingleftinput {
+        padding-left: 3%;
+    !important;
     }
 
-    .inputmarginmobile{
-        text-align:center;
+    .startthewebmargintop {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .startthewebdesktop {
+        padding-left: 7%;
+        padding-right: 7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height: 50px;
+    }
+
+    .inputmarginmobile {
+        text-align: center;
     }
 
 }
@@ -75,23 +81,27 @@
     .lele {
         background-color: #b9151b;
     }
-    .paddingleftinput{
-        padding-left:3%; !important;
-    }
-    .startthewebmargintop{
-        margin-top:10px;
-        text-align:center;
-    }
-    .startthewebdesktop{
-        padding-left:7%;
-        padding-right:7%;
-        border: 3px solid white;
-        background-color: #2E3842;
-        height:50px;
+
+    .paddingleftinput {
+        padding-left: 3%;
+    !important;
     }
 
-    .inputmarginmobile{
-        text-align:center;
+    .startthewebmargintop {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .startthewebdesktop {
+        padding-left: 7%;
+        padding-right: 7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height: 50px;
+    }
+
+    .inputmarginmobile {
+        text-align: center;
     }
 
 }
@@ -105,23 +115,27 @@
     .lele {
         background-color: #b9151b;
     }
-    .paddingleftinput{
-        padding-left:3%; !important;
-    }
-    .startthewebmargintop{
-        margin-top:10px;
-        text-align:center;
-    }
-    .startthewebdesktop{
-        padding-left:7%;
-        padding-right:7%;
-        border: 3px solid white;
-        background-color: #2E3842;
-        height:50px;
+
+    .paddingleftinput {
+        padding-left: 3%;
+    !important;
     }
 
-    .inputmarginmobile{
-        text-align:center;
+    .startthewebmargintop {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .startthewebdesktop {
+        padding-left: 7%;
+        padding-right: 7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height: 50px;
+    }
+
+    .inputmarginmobile {
+        text-align: center;
     }
 
 }
@@ -132,23 +146,27 @@
     .lele {
         background-color: #b9151b;
     }
-    .paddingleftinput{
-        padding-left:3%; !important;
-    }
-    .startthewebmargintop{
-        margin-top:10px;
-        text-align:center;
-    }
-    .startthewebdesktop{
-        padding-left:7%;
-        padding-right:7%;
-        border: 3px solid white;
-        background-color: #2E3842;
-        height:50px;
+
+    .paddingleftinput {
+        padding-left: 3%;
+    !important;
     }
 
-    .inputmarginmobile{
-        text-align:center;
+    .startthewebmargintop {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .startthewebdesktop {
+        padding-left: 7%;
+        padding-right: 7%;
+        border: 3px solid white;
+        background-color: #2E3842;
+        height: 50px;
+    }
+
+    .inputmarginmobile {
+        text-align: center;
     }
 
 }
@@ -174,11 +192,12 @@
 }
 
 .changenavcolor {
-    background-color: white;  !important;
+    background-color: white;
+!important;
 }
 
-.hidelogo{
-    opacity:0;
+.hidelogo {
+    opacity: 0;
 }
 
 #phoneNumber {
@@ -187,7 +206,7 @@
     height: 48px;
     border-radius: 5px;
     color: #0c77ad;
-    font-family:'titillium web',sans-serif;
+    font-family: 'titillium web', sans-serif;
 }
 
 .linkbuttonforapp {
@@ -195,18 +214,20 @@
     border: 1px solid #f5a623;
     height: 48px;
     width: 160px;
-    border-radius:5px;
-    margin-left:30px;
-    color:#f5a623;
-    font-family:'Titillium Web',
-    sans-serif;letter-spacing:1px;font-weight:900;font-size:12px;
+    border-radius: 5px;
+    margin-left: 30px;
+    color: #f5a623;
+    font-family: 'Titillium Web',
+    sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
 }
 
-.linkbuttonforapp:hover{
-    background-color:#f5a623;
-    color:white;
+.linkbuttonforapp:hover {
+    background-color: #f5a623;
+    color: white;
 }
-
 
 #linkButton {
     width: 150px;
@@ -217,85 +238,84 @@
     margin-top: 0px;
 }
 
-.topbackground{
+.topbackground {
     -webkit-transition: background-color 2s;
     transition: background-color 2s;
     background-color: #2E3842;
 }
 
-.changetopbackground{
-    background-color:white;
+.changetopbackground {
+    background-color: white;
 }
 
-.defaultnavcolor{
+.defaultnavcolor {
     -webkit-transition: background-color 2s;
     transition: background-color 2s;
-    background-color:#2E3842;
+    background-color: #2E3842;
 }
 
-.changenavcolour{
-    background-color:white;
+.changenavcolour {
+    background-color: white;
 }
 
-.divone{
+.divone {
     background: url("../images");
 }
 
-.storebutton{
-    border:1px solid black;
-    background-color:black;
-    width:150px;
+.storebutton {
+    border: 1px solid black;
+    background-color: black;
+    width: 150px;
 }
 
-.storebutton:hover{
+.storebutton:hover {
 }
 
-.linkhover:hover{
-    background-color:gainsboro;
+.linkhover:hover {
+    background-color: gainsboro;
 }
 
-.defaulticonbar{
+.defaulticonbar {
     -webkit-transition: background-color 2s;
     transition: background-color 2s;
-    background-color:#5585B5;
+    background-color: #5585B5;
 }
 
-.changeiconbar{
-    background-color:#5585B5;
+.changeiconbar {
+    background-color: #5585B5;
 }
 
-.startonwebbutton{
-    background-color:white;
-    border:1px solid #f5a623;
-    height:50px;
-    width:360px;
-    color:#f5a623;
-    font-family:'Titillium Web', sans-serif;
-    letter-spacing:1px;
-    font-weight:900;
-    font-size:12px
+.startonwebbutton {
+    background-color: white;
+    border: 1px solid #f5a623;
+    height: 50px;
+    width: 360px;
+    color: #f5a623;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px
 }
 
-.startonwebbutton:hover{
-    background-color:orange;
-    color:white;
+.startonwebbutton:hover {
+    background-color: orange;
+    color: white;
 }
 
-.defaultlogostyle{
+.defaultlogostyle {
 
 }
 
 .starttimerlogo {
-    display:initial;
+    display: initial;
 }
 
 .endtimerlogo {
-    display:none;
+    display: none;
 }
 
-
-body{
-    padding-top:50px;
+body {
+    padding-top: 50px;
 }
 
 .makebodyblur {
@@ -307,57 +327,27 @@ body{
     filter: blur(5px);
 }
 
-
-.howitworks{
-    color:white;!important;
+.howitworks {
+    color: white; !important;
+    padding-left:35px;
 }
 
-.howitworks:hover{
-
-    color:black;
+.howitworks:hover {
+    color: black;
 }
 
-.howitworksanimate{
+.howitworksanimate {
     -webkit-animation-name: mymove; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
     animation-name: mymove;
     animation-duration: 1s;
 }
-
-.sliderimageanimate{
-    -webkit-animation-name: sliderimagemove; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    animation-name: sliderimagemove;
-    animation-duration: 4s;
-}
-
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes sliderimagemove {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-/* Standard syntax */
-@keyframes sliderimagemove {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
 
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
     from {
-        margin-top: 50px;
+        margin-top: 5px;
     }
     to {
         margin-top: 0px;
@@ -367,62 +357,64 @@ body{
 /* Standard syntax */
 @keyframes mymove {
     from {
-        margin-top: 50px;
+        margin-top: 5px;
     }
     to {
         margin-top: 0px;
     }
 }
 
+.examples {
+    color: white;  !important;
+    padding-left:35px;
+}
 
+.examples:hover {
+    color: black;
+}
 
-.examples{
-    color:white;!important;
+.getstarted {
+    color: white;  !important;
+    padding-left:35px;
 
 }
 
-.examples:hover{
-    color:black;
+.getstarted:hover {
+    color: black;
 
 }
 
-.getstarted{
-    color:white;!important;
+.faqs {
+    color: white;  !important;
+    padding-left:35px;
 
 }
 
-.getstarted:hover{
-    color:black;
+.faqs:hover {
+    color: black;
 
 }
 
-.faqs{
-    color:white;!important;
+.forbusinesses {
+    color: white;  !important;
+    padding-left:35px;
 
 }
 
-.faqs:hover{
-    color:black;
+.forbusinesses:hover {
+    color: black;
+    padding-left:35px;
 
 }
 
-.forbusinesses{
-    color:white;!important;
+.myaccount {
+    color: #f5a623;  !important;
+    padding-left:35px;
 
 }
 
-.forbusinesses:hover{
-    color:black;
-
-}
-
-.myaccount{
-    color:#f5a623;!important;
-
-}
-
-.myaccount:hover{
-    color:black;
+.myaccount:hover {
+    color: black;
 
 }
 
@@ -455,50 +447,48 @@ body{
     opacity: 1;
 }
 
-
-
 .splitsettleimagedefault {
-    width: 180px;
+    z-index: 10;
+    width: 163px;
     -webkit-transition: all 2s linear;
     transition: all 2s linear;
-    display:none;
-    opacity:0;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 33px;
+    margin-left: 8px;
 }
 
 .splitsettleimageonefade {
-    display:initial;
-    opacity:1;
+    display: initial;
+    opacity: 1;
 }
 
 .splitsettleimagetwofade {
-    display:initial;
-    opacity:1;
+    display: initial;
+    opacity: 1;
 }
 
 .splitsettleimagethreefade {
-    display:initial;
-    opacity:1;
+    display: initial;
+    opacity: 1;
 }
 
 .splitsettleimagefourfade {
-    display:initial;
-    opacity:1;
+    display: initial;
+    opacity: 1;
 }
-
-
-
-
 
 .plantextdefault {
     -webkit-transition: all 2s;
     transition: all 2s;
     opacity: 0;
-    color:#0c77ad;
+    color: #0c77ad;
     font-family: 'Titillium Web', sans-serif;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 900;
-    letter-spacing:0.2px;
-    zoom:1;
+    letter-spacing: 0.2px;
+    zoom: 1;
 
 }
 
@@ -519,87 +509,91 @@ body{
 }
 
 .planimagedefault {
-    width: 180px;
+    z-index: 10;
+    width: 163px;
     -webkit-transition: all 2s linear;
     transition: all 2s linear;
-    display:none;
-    opacity:0;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 33px;
+    margin-left: 8px;
+
 }
 
 .planimageonefade {
-    display:initial;
-    opacity:1;
+    display: initial;
+    opacity: 1;
 }
 
 .planimagetwofade {
-    display:initial;
-    opacity:1;
+    display: initial;
+    opacity: 1;
 }
 
 .planimagethreefade {
-    display:initial;
-    opacity:1;
+    display: initial;
+    opacity: 1;
 }
 
 .planimagefourfade {
-    display:initial;
-    opacity:1;
+    display: initial;
+    opacity: 1;
 }
 
-.splitsettledefaultbackground{
+.splitsettledefaultbackground {
     -webkit-transition: all 1s linear;
     transition: all 1s linear;
     background-color: #2e3842;
 }
 
-.planplaydefaultbackground{
+.planplaydefaultbackground {
     -webkit-transition: all 1s linear;
     transition: all 1s linear;
     background-color: #2e3842;
 
 }
 
-.splitsettlefadebackground{
+.splitsettlefadebackground {
     background-color: white;
 }
 
-.planplayfadebackground{
+.planplayfadebackground {
     background-color: white;
 
 }
 
-.splitandsettletext{
-    text-decoration:none;
-    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+.splitandsettletext {
+    text-decoration: none;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 1.7em;
-    letter-spacing:1px;
-    font-weight:100;
-    color:white;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: white;
     -webkit-transition: all 2s;
     transition: all 2s;
 }
 
-.splitandsettletextchange{
+.splitandsettletextchange {
     color: black;
 }
 
-.planandplaytext{
-    text-decoration:none;
-    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+.planandplaytext {
+    text-decoration: none;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 1.7em;
-    letter-spacing:1px;
-    font-weight:100;
-    color:white;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: white;
     -webkit-transition: all 2s;
     transition: all 2s;
 }
 
-.planandplaytextchange{
+.planandplaytextchange {
     color: black;
 }
 
-
-.navbarbackgroundcolourdark{
+.navbarbackgroundcolourdark {
     background-color: #5585B5;
 }
 
@@ -607,11 +601,11 @@ body{
     opacity: 1;
 }
 
-.starttimernodisplaynone{
+.starttimernodisplaynone {
     display: none;
 }
 
-.endtimerlogodisplaytrue{
+.endtimerlogodisplaytrue {
     display: initial;
 }
 
@@ -623,90 +617,40 @@ body{
     opacity: 0;
 }
 
-
-.starttimernodisplaytrue{
+.starttimernodisplaytrue {
     display: initial;
 }
 
-.endtimerlogodisplaynone{
+.endtimerlogodisplaynone {
     display: none;
 }
 
-
-.sidebar{
-    top:0px;
+.sidebar {
+    top: 0px;
     height: 100%;
 }
 
-
-
-
-div.wave{
-    position: relative;
-    width: 100%;
-}
-div.wave > span{
-    float: left;
-    height: 200px;
-    animation: animate 1.5s ease-in-out alternate infinite;
-}
-div.wave > span:nth-child(1){
-    background-color: #2E3842;
-}
-div.wave > span:nth-child(2){
-    background-color: #5585B5;
-    animation-delay: .2s;
-}
-div.wave > span:nth-child(3){
-    background-color: #2E3842;
-    animation-delay: .4s;
-}
-div.wave > span:nth-child(4){
-    background-color: #5585b5;
-    animation-delay: .6s;
-}
-div.wave > span:nth-child(5){
-    background-color: #2E3842;
-    animation-delay: .8s;
-}
-div.wave > span:nth-child(6){
-    background-color: #5585B5;
-    animation-delay: 1s;
-}
-div.wave > span:nth-child(7){
-    background-color: #2E3842;
-    animation-delay: 1.2s;
-}
-div.wave > span:nth-child(8){
-    background-color: #5585B5;
-    animation-delay: 1.4s;
-}
-div.wave > span:nth-child(9){
-    background-color: #BBFFFF;
-    animation-delay: 1.6s;
-}
-div.wave > span:nth-child(10){
-    background-color: #FFE8E8;
-    animation-delay: 1.8s;
-}
-@keyframes animate{
-    to { height: 100px; }
+@keyframes animate {
+    to {
+        height: 100px;
+    }
 }
 
-
-#slides_control > div{
+#slides_control > div {
     height: 200px;
 }
-img{
-    margin:auto;
+
+img {
+    margin: auto;
     width: 400px;
 }
+
 #slides_control {
-    position:absolute;
+    position: absolute;
     width: 400px;
-    left:50%;
-    top:20px;
-    margin-left:-200px;
+    left: 50%;
+    top: 20px;
+    margin-left: -200px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -715,6 +659,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
     font-family: 'Titillium Web', sans-serif;
     line-height: 1.5em;
+}
+
+a{
+    font-family: "Titillium Web",sans-serif;
 }
 
 /* Chrome, Safari, Opera */
@@ -737,8 +685,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-#dd{
-
+#dd {
     width: 100px;
     height: 100px;
     background-color: red;
@@ -748,54 +695,77 @@ h1, h2, h3, h4, h5, h6 {
     animation-duration: 1s;
 }
 
-.defaultsliderone{
-    -webkit-transition: all 2s linear;
-    transition: all 2s linear;
 
+.defaultsliderone {
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
 }
 
-.defaultslidertwo{
-    -webkit-transition: all 2s linear;
-    transition: all 2s linear;
+.defaultslidertwo {
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
 }
 
-.defaultsliderthree{
-    -webkit-transition: all 2s linear;
-    transition: all 2s linear;
+.defaultsliderthree {
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
 }
 
-.showsliderone{
+.showslideroneopacity {
     opacity: 1;
-    display: initial;
-
-
 }
-.showslidertwo{
+
+.showslideronedisplay {
+    display: initial;
+}
+
+
+.showslidertwoopacity {
     opacity: 1;
-    display: initial;
-
 }
 
-.showsliderthree{
+.showslidertwodisplay {
+    display: initial;
+}
+
+
+.showsliderthreeopacity {
     opacity: 1;
+}
+
+.showsliderthreedisplay {
     display: initial;
-
 }
 
-.hidesliderone{
+
+.hideslideroneopacity {
     opacity: 0;
-    display: none;
-
 }
 
-.hideslidertwo{
+.hideslideronedisplay {
+    display: none;
+}
+
+.hideslidertwoopacity {
     opacity: 0;
-    display: none;
-
 }
 
-.hidesliderthree{
+.hideslidertwodisplay {
+    display: none;
+}
+
+.hidesliderthreeopacity {
     opacity: 0;
-    display: none;
-
 }
+
+.hidesliderthreedisplay {
+    display: none;
+}
+
+.sliderimageanimate {
+    -webkit-animation-name: sliderimagemove; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: sliderimagemove;
+    animation-duration: 4s;
+}
+

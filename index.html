@@ -1,27 +1,14 @@
 <!DOCTYPE html>
 <html ng-app="poolin" xmlns:font-family="http://www.w3.org/1999/xhtml">
 
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
-<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/controllers.js"></script>
 
+<head>
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="bower_components/bootstrap-sidebar/dist/css/sidebar.css">
-
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-
-
-<script src="js/app.js"></script>
-<script src="js/controllers.js"></script>
-
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.css">
+</head>
 
 <body scroll ng-controller="myCtrl">
 
@@ -44,10 +31,6 @@
              style="width:34px;margin-top:4px;margin-left:10px">
     </a>
 
-    <!--
-    <img src="images/Logo_Mypoolin_white.png" class="hidelogo" style="width: 110px;margin-top:4px;margin-left:10px">
-    -->
-
     <button type="button"
             class="navbar-toggle toggle-right defaulticonbar"
             data-toggle="sidebar"
@@ -63,17 +46,25 @@
 
     <div class="row" style="z-index:10;background-color:red;position:absolute;height:100%">
 
-        <div class="col-xs-7 col-sm-2 col-md-2 sidebar sidebar-right sidebar-animate"
+        <div class="col-xs-7 col-sm-3 col-md-3
+        sidebar sidebar-right sidebar-animate"
+             style="background-color:#2E3842;
+             z-index:10;padding-left:0px;
+             padding-right:0px;
+             padding-top:30px">
 
-             style="background-color:#2E3842;z-index:10;padding-left:0px;padding-right:0px;padding-top:30px">
 
-            <span class="glyphicon glyphicon-remove" ng-click="makebackgroundnormal()"
-                  style="color:white;font-size:20px;margin-left:180px" data-toggle="sidebar"
+            <span class="ion-ios-close-empty" ng-click="makebackgroundnormal()"
+                  ng-class="{howitworksanimate:howitworksanimate}"
+                  style="color:white;
+                  font-size:4em;margin-left:250px;font-weight:normal;font-family: 'Glyphicons Halflings';"
+                  data-toggle="sidebar"
                   data-target=".sidebar-right">
 
             </span>
 
-            <ul class="nav navbar-stacked" style="margin-top:20px">
+
+            <ul class="nav navbar-stacked" style="margin-top:10px">
 
                 <li class="howitworks" ng-class="{howitworksanimate:howitworksanimate}" data-toggle="sidebar"
                     data-target=".sidebar-right">
@@ -83,15 +74,13 @@
                        ng-class="{howitworksanimate:howitworksanimate}"
                        style="font-family:'Titillium Web,',sans-serif"
                        ng-click="makebackgroundnormal()"
-                       du-smooth-scroll="section-3" du-scrollspy
-                       >
+                       du-smooth-scroll="section-3" du-scrollspy>
                         HOME
                     </a>
                 </li>
 
-                <li class="howitworks" ng-class="{howitworksanimate:howitworksanimate}" >
+                <li class="howitworks" ng-class="{howitworksanimate:howitworksanimate}">
                     <a class="howitworks" style="font-family:'Titillium Web,',sans-serif"
-
                        ng-click="makebackgroundnormal()" data-toggle="sidebar"
                        data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
                         HOW IT WORKS
@@ -115,7 +104,8 @@
                 </li>
 
                 <li class="faqs" ng-class="{howitworksanimate:howitworksanimate}">
-                    <a class="faqs" ng-class="{howitworksanimate:howitworksanimate}" style="font-family:'Titillium Web', sans-serif;" ng-click="makebackgroundnormal()"
+                    <a class="faqs" ng-class="{howitworksanimate:howitworksanimate}"
+                       style="font-family:'Titillium Web', sans-serif;" ng-click="makebackgroundnormal()"
                        data-toggle="sidebar"
                        data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
                         FAQS
@@ -131,15 +121,25 @@
                     </a>
                 </li>
 
+
+                <div style="font-family: 'Titillium Web'; letter-spacing:1px;color:white;font-weight:900;padding-left:50px">
+                    ..........................................
+                </div>
+
                 <li class="myaccount" ng-class="{howitworksanimate:howitworksanimate}">
                     <a href="#accounts" class="myaccount" style="font-family: 'Titillium Web', sans-serif"
                        data-toggle="sidebar"
                        data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
                         MY_ACCOUNT
                     </a>
-                </li>-->
-
+                </li>
+                -->
             </ul>
+            <div style="margin-top:100px">
+                <i class="ion-social-vimeo" style="color:white;font-size:1em;margin-left:50px"></i>
+                <i class="ion-social-twitter" style="color:white;font-size:1em;margin-left:2%"></i>
+
+            </div>
         </div>
     </div>
 
@@ -148,18 +148,12 @@
 <!-- Begin page content -->
 <div class="container-fluid" ng-click="makebackgroundnormal()" style="padding-left:0px;padding-right:0px;">
 
-
     <div class="row topbackground"
          ng-class="{changetopbackground:lightbackground,makebodyblur:makebodyblur}"
          style="height: 500px;display: block;
-          border-bottom:1px solid black;"
-            >
+          border-bottom:1px solid black;">
 
         <div class="main col-md-12">
-
-            <!-- <span class="firstline margin-line-top center-block"
-                   ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>-->
-
 
             <div class="center-block text-center taglinefade" ng-class="{taglineshow:showtagline}">
                 <!--<img src="images/Logo_Mypoolin_white.png" style="width: 155px;color:red">-->
@@ -203,11 +197,9 @@
             </div>
 
             <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 10px">
-
                 <div style="font-family: 'Titillium Web'; letter-spacing:5px; padding-top:1em;color:black;font-weight:900">
                     ..............................................
                 </div>
-
             </div>
 
             <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 30px">
@@ -215,7 +207,6 @@
                 <button class="btn startonwebbutton">
                     START ON WEB
                 </button>
-
             </div>
 
             <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 20px">
@@ -225,14 +216,12 @@
                     <img src="_include/img/qualcomm-1.png" style="width:50px;margin-left:5px">
                     <img src="_include/img/Accel.png" style="width:50px;margin-left:5px">
                 </a>
-
             </div>
-
-
         </div>
     </div>
 
-    <div class="row" style="height: 440px;">
+
+    <div class="row" style="height:470px;">
 
         <!--<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 planandplay text-center"
              style="height: 100%;border-right:1px solid black">
@@ -258,12 +247,10 @@
              ng-class="{splitsettlefadebackground:splitsettlefade}">
 
             <div class="row text-center">
-
                 <a class="splitandsettletext" style="text-decoration:none"
                    ng-class="{splitandsettletextchange:splitandsettletextchange}">
                     Split & Settle
                 </a>
-
             </div>
 
 
@@ -272,15 +259,31 @@
                 <div class="col-md-6 col-lg-6 text-center"
                      style="height:100%;padding-top:30px">
 
-                    <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_1.png" class="splitsettleimagedefault"
-                         ng-class="{splitsettleimageonefade:splitsettleimageonefading}">
-                    <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_2.png" class="splitsettleimagedefault"
-                         ng-class="{splitsettleimagetwofade:splitsettleimagetwofading}">
-                    <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_3.png" class="splitsettleimagedefault"
-                         ng-class="{splitsettleimagethreefade:splitsettleimagethreefading}">
-                    <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_4.png" class="splitsettleimagedefault"
-                         ng-class="{splitsettleimagefourfade:splitsettleimagefourfading}">
+                    <div class="containerdiv" style="position:relative">
+                        <img src="images/Phone.png"
+                             alt="img"
+                             style="width:180px;
+                             position:absolute;">
+                        <!-- <img class="cornerimage" style="width:142px;position: absolute;top:29px;left:7px"
+                              src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_1.png" alt="">-->
 
+                        <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_1.png"
+                             class="splitsettleimagedefault"
+                             ng-class="{splitsettleimageonefade:splitsettleimageonefading}">
+
+                        <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_2.png" class="splitsettleimagedefault"
+                             ng-class="{splitsettleimagetwofade:splitsettleimagetwofading}">
+
+                        <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_3.png" class="splitsettleimagedefault"
+                             ng-class="{splitsettleimagethreefade:splitsettleimagethreefading}">
+
+                        <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_4.png" class="splitsettleimagedefault"
+                             ng-class="{splitsettleimagefourfade:splitsettleimagefourfading}">
+
+
+                        <div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-md-6 col-lg-6"
@@ -307,7 +310,6 @@
                      </span>
 
                 </div>
-
             </div>
         </div>
 
@@ -328,15 +330,22 @@
                 <div class="col-md-6 col-lg-6 text-center"
                      style="height:100%;padding-top:30px">
 
+                    <div class="containerdiv" style="position:relative">
+                        <img src="images/Phone.png"
+                             alt="img"
+                             style="width:180px;
+                             position:absolute;">
 
-                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_1.png" class="planimagedefault"
-                         ng-class="{planimageonefade:planimageonefading}">
-                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_2.png" class="planimagedefault"
-                         ng-class="{planimagetwofade:planimagetwofading}">
-                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_3.png" class="planimagedefault"
-                         ng-class="{planimagethreefade:planimagethreefading}">
-                    <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_4.png" class="planimagedefault"
-                         ng-class="{planimagefourfade:planimagefourfading}">
+                        <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_1.png" class="planimagedefault"
+                             ng-class="{planimageonefade:planimageonefading}">
+                        <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_2.png" class="planimagedefault"
+                             ng-class="{planimagetwofade:planimagetwofading}">
+                        <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_3.png" class="planimagedefault"
+                             ng-class="{planimagethreefade:planimagethreefading}">
+                        <img src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_4.png" class="planimagedefault"
+                             ng-class="{planimagefourfade:planimagefourfading}">
+
+                    </div>
 
                 </div>
 
@@ -394,10 +403,12 @@
 
         <div class="row defaultsliderone"
              ng-click="changesliderone()"
-             ng-class="{sliderimageanimate:sliderimageanimate,showsliderone:showsliderone,hidesliderone:hidesliderone}">
+             ng-class="{showslideroneopacity:showslideroneopacity,showslideronedisplay:showslideronedisplay,hideslideroneopacity:hideslideroneopacity
+             ,hideslideronedisplay:hideslideronedisplay}">
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/collect.jpg" style="width:300px;">
+
                 <h3 class="profile-name">Split &amp; Settle</h3>
                 Split and collect money back from your friends<br/>
                 Settle your bills for dining, movies, parties &amp; more!
@@ -405,16 +416,20 @@
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/events.jpg" style="width:300px">
+
                 <h3 class="profile-name">Plan &amp; Pay</h3>
                 Plan anything with your group of friends<br/>
                 Everyone pays their own share for the plan!
             </div>
         </div>
 
-        <div class="row defaultslidertwo" ng-click="changeslidertwo()" ng-class="{showslidertwo:showslidertwo,hideslidertwo:hideslidertwo}">
+        <div class="row defaultslidertwo" ng-click="changeslidertwo()"
+             ng-class="{showslidertwoopacity:showslidertwoopacity,showslidertwodisplay:showslidertwodisplay,hideslidertwoopacity:hideslidertwoopacity
+             ,hideslidertwodisplay:hideslidertwodisplay}">
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/dining.jpg" style="width:300px;">
+
                 <h3 class="profile-name">Close set of friends</h3>
                 Add your close friends from your email list<br/>
                 Split and assign shares for everyone.
@@ -422,6 +437,7 @@
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/gifting.jpg" style="width:300px">
+
                 <h3 class="profile-name">Open group of people</h3>
                 Not sure about how many people will join<br/>
                 Everyone pays their own share for the plan!
@@ -429,10 +445,14 @@
         </div>
 
 
-        <div class="row defaultsliderthree" ng-click="changesliderthree()" ng-class="{showsliderthree:showsliderthree,hidesliderthree:hidesliderthree}">
+        <div class="row defaultsliderthree" ng-click="changesliderthree()"
+             ng-class="{showsliderthreeopacity:showsliderthreeopacity,showsliderthreedisplay:showsliderthreedisplay,hidesliderthreeopacity:
+             hidesliderthreeopacity
+             ,hidesliderthreedisplay:hidesliderthreedisplay}">
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/others.jpg" style="width:300px;">
+
                 <h3 class="profile-name">Organizing an Event</h3>
                 Split and collect money back from your friends<br/>
                 Settle your bills for dining, movies, parties &amp; more!
@@ -440,38 +460,53 @@
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/project-2.jpg" style="width:300px">
+
                 <h3 class="profile-name">Open Gathering</h3>
                 Plan anything with your group of friends<br/>
                 Everyone pays their own share for the plan!
             </div>
         </div>
+    </div>
 
+    <div class="footerpoolin row text-center" style="background-color:#2E3842;height:380px;padding-top:50px">
 
+        <h3 class="title" style="color:white">Ask us any queries that you may have!</h3>
+        <a href="" style="color: white;margin-top:40px;display: block;font-size: 1.1em;text-decoration:none">hello@mypoolin.com</a>
+        <a href="" style="color: white;margin-top:40px;display:block;font-size: 1.1em;text-decoration:none">
+            (+91) 9599771577
+        </a>
+        <a style="color: white;margin-top:40px;display:block;font-size: 1.1em;text-decoration:none">
+            InfinyPool India
+            <br>
+            Sector-32, Gurgaon
+            <br>
+            Haryana, India
+        </a>
+    </div>
 
-<!--<div class='wave row' style="margin-top: 50px">
-    <span class="col-md-2 col-lg-2 text-center" style="color:white;;padding-top:50px;font-size:25px">
-        P
-    </span>
-    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px">
-        O
-    </span>
-    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px" >
-        O
-    </span>
-    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px">
-        L
-    </span>
-    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px">
-        I
-    </span>
-    <span class="col-md-2 col-lg-2 text-center" style="color:white;padding-top:50px;font-size:25px">
-        N
-    </span>
-</div>-->
-
-
+    <div class="footerpoolin row text-center" style="background-color:black;height:100px;padding-top:10px;color:white">
+        <a style="color:white;text-decoration:none" href="About/About.html" target="_blank">About Us.</a>
+        <a style="color:white;text-decoration:none" href="blog" target="_blank">Blog.</a>
+        <a style="color:white;text-decoration:none" href="About/Press.html" target="_blank">Press and Media</a><br>
+        <a style="color:white;text-decoration:none" href="About/Terms.html" target="_blank">Terms and Conditions. </a>
+        <a style="color:white;text-decoration:none" href="About/Privacy.html" target="_blank"> Privacy Policy </a><br>
+        <a style="color:white;text-decoration:none">© Mypoolin. 100% Secure</a>
+        <img src="_include/img/verified-by-visa.png" style="width:60px">
+        <img src="_include/img/MasterCard_SecureCode.png" style="width:60px">
+    </div>
 </div>
 
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
+<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
 </body>
 </html>

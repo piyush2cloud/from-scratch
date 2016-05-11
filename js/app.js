@@ -1,6 +1,5 @@
 var mainApp = angular.module("poolin", ['poolin.controllers', 'duScroll']);
 
-
 mainApp.directive("scroll", function ($window) {
     return function (scope, element, attrs) {
 
@@ -30,7 +29,6 @@ mainApp.directive("scroll", function ($window) {
                 scope.starttimernodisplaytrue = 1;
                 scope.endtimerlogodisplaynone = 1;
             }
-
 
             scope.$apply();
         });
