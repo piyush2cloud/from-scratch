@@ -6,12 +6,12 @@
 
     <a ng-click="navLogoClick()" href="">
 
-        <img src="_include/img/Logo_Blue.png"
+        <img ng-src="_include/img/Logo_Blue.png"
              ng-class="{starttimernodisplaynone:starttimernodisplaynone,
              starttimernodisplaytrue:starttimernodisplaytrue}"
              class="topleftlogo">
 
-        <img src="_include/img/Logo_White.png"
+        <img ng-src="_include/img/Logo_White.png"
              ng-class="{endtimerlogodisplaytrue:endtimerlogodisplaytrue,
              endtimerlogodisplaynone:endtimerlogodisplaynone}"
              class="topleftlogo">
@@ -101,10 +101,10 @@
                     </a>
                 </li>
 
-                <li class="forbusinesses" ng-class="{howitworksanimate:howitworksanimate}">
-                    <a href="#business" class="forbusinesses "
+                <li class="linebreakersidebar" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a class="linebreakersidebar"
                        style="font-family: 'Titillium Web',
-                       sans-serif;letter-spacing:1px;color:white;font-weight:500;">
+                       sans-serif;letter-spacing:1px;color:white;font-weight:500;text-decoration:none;background-color:#2E3842">
                         .................................
                     </a>
                 </li>
@@ -119,7 +119,7 @@
                 </li>
 
                 <li class="socialaccount" ng-class="{howitworksanimate:howitworksanimate}">
-                    <a href="#business" class="socialaccount">
+                    <a class="socialaccount">
                         <i class="ion-social-vimeo"></i>
                         <i class="ion-social-twitter"></i>
                     </a>

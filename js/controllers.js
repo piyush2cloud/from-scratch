@@ -2,8 +2,6 @@ var app = angular.module('poolin.controllers', [])
 
 app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $document) {
 
-    $scope.linewidth = 0;
-    $scope.hideline = 0;
     $scope.showtagline = 0;
     $scope.starttimerlogo = 1;
     $scope.endtimerlogo = 0;

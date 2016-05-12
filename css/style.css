@@ -390,13 +390,15 @@ body {
 .forbusinesses {
     color: white;  !important;
     padding-left:15%;
+}
 
+.linebreakersidebar{
+    color: white;  !important;
+    padding-left:15%;
 }
 
 .forbusinesses:hover {
     color: black;
-    padding-left:15%;
-
 }
 
 .myaccount {
