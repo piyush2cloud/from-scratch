@@ -482,6 +482,7 @@ body {
     font-weight: 900;
     letter-spacing: 0.2px;
     zoom: 1;
+    display: block;
 
 }
 
@@ -547,6 +548,8 @@ body {
     -webkit-transition: all 1s linear;
     transition: all 1s linear;
     background-color: #2e3842;
+    height:100%;
+    padding-top:20px
 
 }
 
@@ -647,14 +650,6 @@ img {
     left: 50%;
     top: 20px;
     margin-left: -200px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 20px 0;
-    color: #181616;
-    font-weight: 100;
-    font-family: 'Titillium Web', sans-serif;
-    line-height: 1.5em;
 }
 
 a{
@@ -934,4 +929,98 @@ a{
 
 .margintop70{
     margin-top:70px;
+}
+
+.planplayleftsection{
+    height:100%;
+    padding-top:30px;
+}
+.planplayrightsection{
+    height:100%;
+    padding-top:30px;
+    padding-left:80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+    color: #181616;
+    font-weight: 100;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.5em;
+}
+
+.sectionthree{
+    height: 100%;
+    margin-top:20px;
+}
+
+.payu-paytm{
+    width:65px;
+}
+
+.mobi-paypal{
+    width:62px;
+}
+
+.threethousandpeople{
+    margin-top:20px;
+    font-weight:100;
+    font-size:1.5em;
+}
+
+.margintop20pixel{
+    margin-top:20px;
+}
+.width30pix{
+    width:300px;
+}
+
+.poolininfo{
+    background-color:#2E3842;
+    height:380px;
+    padding-top:50px;
+}
+
+.poolininfo .mytitle{
+    color: white;!important;
+}
+
+.poolininfo .myemail{
+    color: white;
+    margin-top:40px;
+    display: block;
+    font-size: 1.1em;
+    text-decoration:none;
+}
+
+.poolininfo .mynumber{
+    color: white;
+    margin-top:40px;
+    display:block;
+    font-size: 1.1em;
+    text-decoration:none
+}
+
+.poolininfo .myaddress{
+    color: white;
+    margin-top:40px;
+    display:block;
+    font-size: 1.1em;
+    text-decoration:none
+}
+
+.footerpoolin{
+    background-color:black;
+    height:100px;
+    padding-top:10px;
+    color:white
+}
+
+.footerpoolin .footertext{
+    color:white;
+    text-decoration:none;
+}
+
+.footerpoolin .footerimg{
+    width:50px;
 }

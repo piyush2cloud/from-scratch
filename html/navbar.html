@@ -1,0 +1,133 @@
+<div class="navbar navbar-fixed-top defaultnavcolor"
+     ng-class="{
+     navbarbackgroundcolourdark:navbarbackgroundcolourdark,
+     navbarbackgroundcolourwhite:navbarbackgroundcolourwhite}">
+
+
+    <a ng-click="navLogoClick()" href="">
+
+        <img src="_include/img/Logo_Blue.png"
+             ng-class="{starttimernodisplaynone:starttimernodisplaynone,
+             starttimernodisplaytrue:starttimernodisplaytrue}"
+             class="topleftlogo">
+
+        <img src="_include/img/Logo_White.png"
+             ng-class="{endtimerlogodisplaytrue:endtimerlogodisplaytrue,
+             endtimerlogodisplaynone:endtimerlogodisplaynone}"
+             class="topleftlogo">
+    </a>
+
+    <button type="button"
+            class="navbar-toggle toggle-right defaulticonbar"
+            data-toggle="sidebar"
+            data-target=".sidebar-right"
+            ng-class="{changeiconbar:iconbarchange}"
+            ng-click="makebackgroundblur()">
+
+        <span style="background-color: white" class="icon-bar"></span>
+        <span style="background-color: white" class="icon-bar"></span>
+        <span style="background-color: white" class="icon-bar"></span>
+
+    </button>
+
+    <div class="row sidebarrightposition">
+
+        <div class="col-xs-7 col-sm-3 col-md-3
+        sidebar sidebar-right sidebar-animate">
+
+
+            <span class="ion-ios-close-empty" ng-click="makebackgroundnormal()"
+                  ng-class="{howitworksanimate:howitworksanimate}"
+                  data-toggle="sidebar"
+                  data-target=".sidebar-right">
+
+            </span>
+
+
+            <ul class="nav navbar-stacked" style="margin-top:10px">
+
+                <li class="howitworks" ng-class="{howitworksanimate:howitworksanimate}" data-toggle="sidebar"
+                    data-target=".sidebar-right">
+                    <a class="howitworks"
+                       data-toggle="sidebar"
+                       data-target=".sidebar-right"
+                       ng-class="{howitworksanimate:howitworksanimate}"
+                       style="font-family:'Titillium Web,',sans-serif"
+                       ng-click="makebackgroundnormal()"
+                       du-smooth-scroll="section-3" du-scrollspy>
+                        HOME
+                    </a>
+                </li>
+
+                <li class="howitworks" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a class="howitworks" style="font-family:'Titillium Web,',sans-serif"
+                       ng-click="makebackgroundnormal()" data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        HOW IT WORKS
+                    </a>
+                </li>
+
+                <li class="examples" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a class="examples" style="font-family: 'Titillium Web', sans-serif"
+                       ng-click="makebackgroundnormal()" data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        EXAMPLES
+                    </a>
+                </li>
+
+                <li class="getstarted" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a class="getstarted" style="font-family: 'Titillium Web', sans-serif"
+                       ng-click="makebackgroundnormal()" data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        GET-STARTED
+                    </a>
+                </li>
+
+                <li class="faqs" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a class="faqs" ng-class="{howitworksanimate:howitworksanimate}"
+                       style="font-family:'Titillium Web', sans-serif;" ng-click="makebackgroundnormal()"
+                       data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        FAQS
+                    </a>
+                </li>
+
+                <li class="forbusinesses" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a href="#business" class="forbusinesses " style="font-family: 'Titillium Web', sans-serif"
+                       data-toggle="sidebar"
+                       data-target=".sidebar-right"
+                       du-smooth-scroll="section-3" du-scrollspy>
+                        BUSINESSES
+                    </a>
+                </li>
+
+                <li class="forbusinesses" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a href="#business" class="forbusinesses "
+                       style="font-family: 'Titillium Web',
+                       sans-serif;letter-spacing:1px;color:white;font-weight:500;">
+                        .................................
+                    </a>
+                </li>
+
+
+                <li class="myaccount" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a href="#accounts" class="myaccount" style="font-family: 'Titillium Web', sans-serif"
+                       data-toggle="sidebar"
+                       data-target=".sidebar-right" du-smooth-scroll="section-3" du-scrollspy>
+                        MY_ACCOUNT
+                    </a>
+                </li>
+
+                <li class="socialaccount" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a href="#business" class="socialaccount">
+                        <i class="ion-social-vimeo"></i>
+                        <i class="ion-social-twitter"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</div>
