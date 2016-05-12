@@ -830,15 +830,26 @@ a{
     margin-top:50px;
 }
 
-.socialaccount .ion-social-vimeo{
+.socialaccount .ion-social-facebook{
     color:white;
-    font-size:1em;
+    font-size:1.2em;
 }
 
 .socialaccount .ion-social-twitter{
     color:white;
-    font-size:1em;
-    margin-left:2%;
+    font-size:1.2em;
+    margin-left:3%;
+}
+
+.socialaccount .ion-social-facebook{
+    color:white;
+    font-size:1.2em;
+}
+
+.socialaccount .ion-social-youtube{
+    color:white;
+    font-size:1.2em;
+    margin-left:3%;
 }
 
 .containerfluidwrapper{
@@ -933,12 +944,12 @@ a{
 
 .splitsettlerightsection{
     height:100%;
-    padding-top:30px;
-    padding-left:80px
+    padding-top:10px;
+    padding-left:0px
 }
 
 .margintop70{
-    margin-top:70px;
+    margin-top:50px;
 }
 
 .planplayleftsection{
@@ -947,8 +958,8 @@ a{
 }
 .planplayrightsection{
     height:100%;
-    padding-top:30px;
-    padding-left:80px;
+    padding-top:10px;
+    padding-left:0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1023,7 +1034,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color:black;
     height:100px;
     padding-top:10px;
-    color:white
+    color:white;
 }
 
 .footerpoolin .footertext{
@@ -1043,3 +1054,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: black;
 }
 
+.startnow{
+    background-color: #f5a623;
+    font-weight: 500;
+    font-family: "Titillium Web", sans-serif;
+    width: 250px;
+    line-height: 2em;
+}
+
+.startnow:hover{
+
+}

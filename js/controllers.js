@@ -6,7 +6,7 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
     $scope.containershow=0;
     $scope.navshow=0;
 
-    $scope.$watch('$viewContentLoaded',function(event, viewConfig){
+    /*$scope.$watch('$viewContentLoaded',function(event, viewConfig){
         console.log("Contents did load.");
         $scope.onloadimage = 0;
         $scope.navshow=1;
@@ -18,9 +18,9 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
             $scope.navbarbackgroundcolourwhite = 1;
             $scope.iconbarchange = 1;
         }, 1000);
-    });
+    });*/
 
-   /*$timeout(function () {
+   $timeout(function () {
         $scope.onloadimage = 0;
         $scope.navshow=1;
         $scope.containershow=1;
@@ -32,7 +32,7 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
             $scope.iconbarchange = 1;
         }, 1000);
 
-    }, 5000);*/
+    }, 1000);
 
     $scope.showtagline = 0;
     $scope.starttimerlogo = 1;
