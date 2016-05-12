@@ -909,6 +909,7 @@ a{
 
 .sectiontwo{
     height:470px;
+    border-bottom: 1px solid black;
 }
 
 .splitsettleleftsection{
