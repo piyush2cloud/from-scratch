@@ -20,7 +20,7 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
         }, 1000);
     });
 
-   /* $timeout(function () {
+   /*$timeout(function () {
         $scope.onloadimage = 0;
         $scope.navshow=1;
         $scope.containershow=1;
@@ -32,7 +32,7 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
             $scope.iconbarchange = 1;
         }, 1000);
 
-    }, 1000);*/
+    }, 5000);*/
 
     $scope.showtagline = 0;
     $scope.starttimerlogo = 1;
