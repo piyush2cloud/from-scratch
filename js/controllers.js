@@ -257,10 +257,10 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
 
     $scope.iconbarchange = 0;
 
+
     $scope.navLogoClick = function () {
         var top = 0;
         var duration = 2; //milliseconds
-
         //Scroll to the exact position
         $document.scrollTop(top, duration).then(function () {
             console && console.log('You just scrolled to the top!');

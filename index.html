@@ -43,20 +43,14 @@
 
     </button>
 
-    <div class="row" style="z-index:10;background-color:red;position:absolute;height:100%">
+    <div class="row sidebarrightposition">
 
         <div class="col-xs-7 col-sm-3 col-md-3
-        sidebar sidebar-right sidebar-animate"
-             style="background-color:#2E3842;
-             z-index:10;padding-left:0px;
-             padding-right:0px;
-             padding-top:30px">
+        sidebar sidebar-right sidebar-animate">
 
 
             <span class="ion-ios-close-empty" ng-click="makebackgroundnormal()"
                   ng-class="{howitworksanimate:howitworksanimate}"
-                  style="color:white;
-                  font-size:4em;margin-left:250px;font-weight:normal;font-family: 'Glyphicons Halflings';"
                   data-toggle="sidebar"
                   data-target=".sidebar-right">
 
@@ -120,10 +114,14 @@
                     </a>
                 </li>
 
+                <li class="forbusinesses" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a href="#business" class="forbusinesses "
+                       style="font-family: 'Titillium Web',
+                       sans-serif;letter-spacing:1px;color:white;font-weight:500;">
+                        .................................
+                    </a>
+                </li>
 
-                <div style="font-family: 'Titillium Web'; letter-spacing:1px;color:white;font-weight:900;padding-left:50px">
-                    ..........................................
-                </div>
 
                 <li class="myaccount" ng-class="{howitworksanimate:howitworksanimate}">
                     <a href="#accounts" class="myaccount" style="font-family: 'Titillium Web', sans-serif"
@@ -132,42 +130,39 @@
                         MY_ACCOUNT
                     </a>
                 </li>
-                -->
-            </ul>
-            <div style="margin-top:100px">
-                <i class="ion-social-vimeo" style="color:white;font-size:1em;margin-left:50px"></i>
-                <i class="ion-social-twitter" style="color:white;font-size:1em;margin-left:2%"></i>
 
-            </div>
+                <li class="socialaccount" ng-class="{howitworksanimate:howitworksanimate}">
+                    <a href="#business" class="socialaccount">
+                        <i class="ion-social-vimeo"></i>
+                        <i class="ion-social-twitter"></i>
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
     </div>
 
 </div>
 
 <!-- Begin page content -->
-<div class="container-fluid" ng-click="makebackgroundnormal()" style="padding-left:0px;padding-right:0px;">
+<div class="container-fluid containerfluidwrapper" ng-click="makebackgroundnormal()">
 
     <div class="row topbackground"
-         ng-class="{changetopbackground:lightbackground,makebodyblur:makebodyblur}"
-         style="height: 500px;display: block;
-          border-bottom:1px solid black;">
+         ng-class="{changetopbackground:lightbackground,makebodyblur:makebodyblur}">
 
         <div class="main col-md-12">
 
             <div class="center-block text-center taglinefade" ng-class="{taglineshow:showtagline}">
                 <!--<img src="images/Logo_Mypoolin_white.png" style="width: 155px;color:red">-->
-                <p style="color:rgb(85, 133, 181);font-family: 'Titillium Web',sans-serif;
-                font-size: 46px;margin-bottom: 1px;letter-spacing:0;font-weight: bold;">
+                <p class="mypoolintext">
                     Mypoolin
                 </p>
 
-                <p style="color:rgb(85, 133, 181);font-family:'Titillium Web',sans-serif;
-                line-height: 1.5em;font-size: 20px;letter-spacing: .5px;margin-left:10px">
+                <p class="paymentmadefuntext">
                     Payments made fun
                 </p>
             </div>
-
-            <!--  <span class="firstline center-block" ng-class="{ fadeline: hideline, firstlineaniamte: linewidth}"></span>-->
 
 
             <div class="text-center taglinefade" ng-class="{taglineshow:showtagline}" style="margin-top:35px">
@@ -182,50 +177,45 @@
 
             </div>
 
-            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top:35px">
+            <div class="text-center taglinefade storebuttonwrapper" ng-class="{ taglineshow: showtagline}">
 
                 <a href="https://play.google.com/store/apps/details?id=com.app.mypoolin&amp;referrer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web">
-                    <img class="googlestoreimage" src="images/playstore-black-button.jpg" style="width:162px">
+                    <img class="googlestoreimage" src="images/playstore-black-button.jpg">
                 </a>
 
                 <a href="https://itunes.apple.com/in/app/mypoolin-plan-pay-friends/id1032623508?mt=8&amp;ref
-                errer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web" style="margin-left:30px"><img
-                        class="appstoreimage" src="images/apptore-black-button.jpg" style="width:162px;">
+                errer=utm_source%3Dhome_page%26utm_medium%3Dmypoolin_web"><img
+                        class="appstoreimage" src="images/apptore-black-button.jpg">
                 </a>
 
             </div>
 
-            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 10px">
-                <div style="font-family: 'Titillium Web'; letter-spacing:5px; padding-top:1em;color:black;font-weight:900">
+            <div class="text-center taglinefade horizontalline" ng-class="{ taglineshow: showtagline}">
+                <div>
                     ..............................................
                 </div>
             </div>
 
-            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 30px">
-
+            <div class="text-center taglinefade startonwebwrapper" ng-class="{ taglineshow: showtagline}">
                 <button class="btn startonwebbutton">
                     START ON WEB
                 </button>
             </div>
 
-            <div class="text-center taglinefade" ng-class="{ taglineshow: showtagline}" style="margin-top: 20px">
-
+            <div class="text-center taglinefade ventureswrapper" ng-class="{ taglineshow: showtagline}" style="margin-top: 20px">
                 <a href="">
                     Winner of QPrize 2015 India
-                    <img src="_include/img/qualcomm-1.png" style="width:50px;margin-left:5px">
-                    <img src="_include/img/Accel.png" style="width:50px;margin-left:5px">
+                    <img src="_include/img/qualcomm-1.png">
+                    <img src="_include/img/Accel.png">
                 </a>
             </div>
         </div>
     </div>
 
 
-    <div class="row" style="height:470px;">
+    <div class="row sectiontwo">
 
         <div class="col-md-6 col-lg-6 splitsettledefaultbackground"
-             style="height:100%;
-             border-right:1px solid black;
-             padding-top:20px"
              ng-mouseenter="StartTimerSettle()"
              ng-mouseleave="StopTimerSettle()"
              ng-class="{splitsettlefadebackground:splitsettlefade}">
@@ -238,18 +228,16 @@
             </div>
 
 
-            <div class="row" style="height:100%">
+            <div class="row">
 
-                <div class="col-md-6 col-lg-6 text-center"
-                     style="height:100%;padding-top:30px">
+                <div class="col-md-6 col-lg-6 text-center splitsettleleftsection">
 
-                    <div class="containerdiv" style="position:relative">
+                    <div class="containerdiv mobilebodywrapper">
                         <img src="images/Phone.png"
                              alt="img"
                              style="width:180px;
                              position:absolute;">
-                        <!-- <img class="cornerimage" style="width:142px;position: absolute;top:29px;left:7px"
-                              src="Plan%20&%20Pay/Plan%20&%20Pay/PnP_1.png" alt="">-->
+
 
                         <img src="Split%20&%20Settle/Split%20&%20Settle/SnS_1.png"
                              class="splitsettleimagedefault"
@@ -270,25 +258,24 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-6"
-                     style="height:100%;padding-top:30px;padding-left:80px">
+                <div class="col-md-6 col-lg-6 splitsettlerightsection">
 
-                    <span class="splitsettletextdefault" style="display:block"
+                    <span class="splitsettletextdefault margintop70"
                           ng-class="{splitsettletextonefade:splittextone}">
                          Choose Amount
                     </span>
 
-                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                    <span class="splitsettletextdefault margintop70"
                           ng-class="{splitsettletexttwofade:splittexttwo}">
                           Create Pool
                     </span>
 
-                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                    <span class="splitsettletextdefault margintop70"
                           ng-class="{splitsettletexttwofade:splittextthree}">
                           Manage Friends
                     </span>
 
-                    <span class="splitsettletextdefault" style="display:block;margin-top:70px"
+                    <span class="splitsettletextdefault margintop70"
                           ng-class="{splitsettletexttwofade:splittextfour}">
                           Payment to Bank
                      </span>

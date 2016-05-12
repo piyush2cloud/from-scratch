@@ -40,6 +40,8 @@
         margin-left: 55%;
     }
 
+
+
 }
 
 /* Portrait phones and smaller */
@@ -238,16 +240,6 @@
     margin-top: 0px;
 }
 
-.topbackground {
-    -webkit-transition: background-color 2s;
-    transition: background-color 2s;
-    background-color: #2E3842;
-}
-
-.changetopbackground {
-    background-color: white;
-}
-
 .defaultnavcolor {
     -webkit-transition: background-color 2s;
     transition: background-color 2s;
@@ -329,7 +321,7 @@ body {
 
 .howitworks {
     color: white; !important;
-    padding-left:35px;
+    padding-left:15%;
 }
 
 .howitworks:hover {
@@ -366,7 +358,7 @@ body {
 
 .examples {
     color: white;  !important;
-    padding-left:35px;
+    padding-left:15%;
 }
 
 .examples:hover {
@@ -375,7 +367,7 @@ body {
 
 .getstarted {
     color: white;  !important;
-    padding-left:35px;
+    padding-left:15%;
 
 }
 
@@ -386,7 +378,7 @@ body {
 
 .faqs {
     color: white;  !important;
-    padding-left:35px;
+    padding-left:15%;
 
 }
 
@@ -397,19 +389,19 @@ body {
 
 .forbusinesses {
     color: white;  !important;
-    padding-left:35px;
+    padding-left:15%;
 
 }
 
 .forbusinesses:hover {
     color: black;
-    padding-left:35px;
+    padding-left:15%;
 
 }
 
 .myaccount {
     color: #f5a623;  !important;
-    padding-left:35px;
+    padding-left:15%;
 
 }
 
@@ -428,6 +420,7 @@ body {
     font-weight: 900;
     letter-spacing:0.2px;
     zoom:1;
+    display:block;
 
 }
 
@@ -545,6 +538,9 @@ body {
     -webkit-transition: all 1s linear;
     transition: all 1s linear;
     background-color: #2e3842;
+    height:100%;
+    border-right:1px solid black;
+    padding-top:20px
 }
 
 .planplaydefaultbackground {
@@ -789,14 +785,153 @@ a{
     to {right: 100%;}
 }
 
+/* Standard syntax */
+@keyframes righttoleft {
+    from {right: 0px;}
+    to {right: 100%;}
+}
+
+
 .topleftlogo{
     width:34px;
     margin-top:4px;
     margin-left:10px
 }
 
-/* Standard syntax */
-@keyframes righttoleft {
-    from {right: 0px;}
-    to {right: 100%;}
+.sidebarrightposition{
+    position:absolute;
+    height:100%;
+    z-index: 10;
+}
+
+.sidebarrightposition .sidebar{
+    background-color:#2E3842;
+    z-index:10;padding-left:0px;
+    padding-right:0px;
+    padding-top:30px;
+
+}
+
+.sidebarrightposition .ion-ios-close-empty{
+    color:white;
+    font-size:4em;
+    margin-left:70%;
+    font-weight:normal;
+    font-family: 'Glyphicons Halflings';
+}
+
+.socialaccount{
+    color: white;  !important;
+    padding-left:15%;
+    margin-top:50px;
+}
+
+.socialaccount .ion-social-vimeo{
+    color:white;
+    font-size:1em;
+}
+
+.socialaccount .ion-social-twitter{
+    color:white;
+    font-size:1em;
+    margin-left:2%;
+}
+
+.containerfluidwrapper{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.topbackground {
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
+    background-color: #2E3842;
+    height: 500px;
+    display: block;
+    border-bottom:1px solid black;
+}
+
+.changetopbackground {
+    background-color: white;
+}
+
+.mypoolintext{
+    color:rgb(85, 133, 181);
+    font-family: 'Titillium Web',sans-serif;
+    font-size: 46px;
+    margin-bottom: 1px;
+    letter-spacing:0;
+    font-weight: bold;
+}
+
+.paymentmadefuntext{
+    color:rgb(85, 133, 181);
+    font-family:'Titillium Web',sans-serif;
+    line-height: 1.5em;
+    font-size: 20px;
+    letter-spacing: .5px;
+    margin-left:10px
+}
+
+.storebuttonwrapper{
+    margin-top:35px;
+}
+
+.storebuttonwrapper .googlestoreimage{
+    width:162px;
+}
+
+.storebuttonwrapper .appstoreimage{
+    margin-left:30px;
+    width:162px;
+
+}
+
+.horizontalline{
+    margin-top: 10px
+}
+
+.horizontalline div{
+    font-family: 'Titillium Web';
+    letter-spacing:5px;
+    padding-top:1em;
+    color:black;
+    font-weight:900;
+}
+
+.startonwebwrapper{
+    margin-top: 35px;
+}
+
+.ventureswrapper{
+    margin-top:20px;
+}
+
+.ventureswrapper img{
+    width:50px;
+    margin-left:5px
+}
+
+.sectiontwo{
+    height:470px;
+}
+
+.splitsettleleftsection{
+    height:100%;
+    padding-top:30px;
+}
+
+.mobilebodywrapper{
+    width:180px; !important;
+    position:absolute; !important;
+}
+
+.splitsettlerightsection{
+    height:100%;
+    padding-top:30px;
+    padding-left:80px
+}
+
+.margintop70{
+    margin-top:70px;
 }
