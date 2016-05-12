@@ -29,6 +29,8 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
 
     }
 
+
+
     $scope.splitsettleimageonefading = 0;
     $scope.splitsettleimagetwofading = 0;
     $scope.splitsettleimagethreefading = 0;
@@ -266,73 +268,100 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
     };
 
 
-    $scope.showslideroneopacity = 1;
-    $scope.hideslideroneopacity = 0;
+    $scope.lefttorightsliderone=0;
+    $scope.righttoleftsliderone=0;
+    $scope.lefttorightslidertwo=0;
+    $scope.righttoleftslidertwo=0;
+    $scope.lefttorightsliderthree=0;
+    $scope.righttoleftsliderthree=0;
+
+
     $scope.showslideronedisplay = 1;
     $scope.hideslideronedisplay = 0;
 
-    $scope.showslidertwoopacity = 0;
-    $scope.hideslidertwoopacity = 1;
     $scope.showslidertwodisplay = 0;
     $scope.hideslidertwodisplay = 1;
 
-    $scope.showsliderthreeopacity = 0;
-    $scope.hidesliderthreeopacity = 1;
     $scope.showsliderthreedisplay = 0;
     $scope.hidesliderthreedisplay = 1;
 
+
+
     $scope.changesliderone = function () {
 
-        $scope.showslideroneopacity = 0;
-        $scope.hideslideroneopacity = 1;
-        $scope.showslideronedisplay = 0;
-        $scope.hideslideronedisplay = 1;
 
-        $scope.showslidertwoopacity = 1;
-        $scope.hideslidertwoopacity = 0;
-        $scope.showslidertwodisplay = 1;
-        $scope.hideslidertwodisplay = 0;
+        $scope.lefttorightsliderone=1;
+        $scope.righttoleftsliderone=0;
+        $scope.lefttorightslidertwo=0;
+        $scope.righttoleftslidertwo=0;
+        $scope.lefttorightsliderthree=0;
+        $scope.righttoleftsliderthree=0;
 
-        $scope.showsliderthreeopacity = 0;
-        $scope.hidesliderthreeopacity = 1;
-        $scope.showsliderthreedisplay = 0;
-        $scope.hidesliderthreedisplay = 1;
+        $timeout(function () {
+
+            $scope.showslideronedisplay = 0;
+            $scope.hideslideronedisplay = 1;
+
+            $scope.showslidertwodisplay = 1;
+            $scope.hideslidertwodisplay = 0;
+
+            $scope.showsliderthreedisplay = 0;
+            $scope.hidesliderthreedisplay = 1;
+
+
+        }, 800);
+
 
     }
 
     $scope.changeslidertwo = function () {
 
-        $scope.showslideroneopacity = 0;
-        $scope.hideslideroneopacity = 1;
-        $scope.showslideronedisplay = 0;
-        $scope.hideslideronedisplay = 1;
+        $scope.lefttorightsliderone=0;
+        $scope.righttoleftsliderone=0;
+        $scope.lefttorightslidertwo=1;
+        $scope.righttoleftslidertwo=0;
+        $scope.lefttorightsliderthree=0;
+        $scope.righttoleftsliderthree=0;
 
-        $scope.showslidertwoopacity = 0;
-        $scope.hideslidertwoopacity = 1;
-        $scope.showslidertwodisplay = 0;
-        $scope.hideslidertwodisplay = 1;
+        $timeout(function () {
 
-        $scope.showsliderthreeopacity = 1;
-        $scope.hidesliderthreeopacity = 0;
-        $scope.showsliderthreedisplay = 1;
-        $scope.hidesliderthreedisplay = 0;
+            $scope.showslideronedisplay = 0;
+            $scope.hideslideronedisplay = 1;
+
+            $scope.showslidertwodisplay = 0;
+            $scope.hideslidertwodisplay = 1;
+
+            $scope.showsliderthreedisplay = 1;
+            $scope.hidesliderthreedisplay = 0;
+
+        }, 800);
+
     }
 
     $scope.changesliderthree = function () {
-        $scope.showslideroneopacity = 1;
-        $scope.hideslideroneopacity = 0;
-        $scope.showslideronedisplay = 1;
-        $scope.hideslideronedisplay = 0;
 
-        $scope.showslidertwoopacity = 0;
-        $scope.hideslidertwoopacity = 1;
-        $scope.showslidertwodisplay = 0;
-        $scope.hideslidertwodisplay = 1;
+        $scope.lefttorightsliderone=0;
+        $scope.righttoleftsliderone=0;
+        $scope.lefttorightslidertwo=1;
+        $scope.righttoleftslidertwo=0;
+        $scope.lefttorightsliderthree=1;
+        $scope.righttoleftsliderthree=0;
 
-        $scope.showsliderthreeopacity = 0;
-        $scope.hidesliderthreeopacity = 1;
-        $scope.showsliderthreedisplay = 0;
-        $scope.hidesliderthreedisplay = 1;
+
+
+        $timeout(function () {
+
+            $scope.showslideronedisplay = 1;
+            $scope.hideslideronedisplay = 0;
+
+            $scope.showslidertwodisplay = 0;
+            $scope.hideslidertwodisplay = 1;
+
+            $scope.showsliderthreedisplay = 0;
+            $scope.hidesliderthreedisplay = 1;
+
+        }, 800);
+
     }
 
 

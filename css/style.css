@@ -685,52 +685,26 @@ a{
     }
 }
 
-#dd {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 1s;
-}
-
-
 .defaultsliderone {
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+
 }
 
 .defaultslidertwo {
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+
 }
 
 .defaultsliderthree {
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+
 }
 
-.showslideroneopacity {
-    opacity: 1;
-}
+
 
 .showslideronedisplay {
     display: initial;
 }
 
-
-.showslidertwoopacity {
-    opacity: 1;
-}
-
 .showslidertwodisplay {
     display: initial;
-}
-
-
-.showsliderthreeopacity {
-    opacity: 1;
 }
 
 .showsliderthreedisplay {
@@ -738,25 +712,15 @@ a{
 }
 
 
-.hideslideroneopacity {
-    opacity: 0;
-}
-
 .hideslideronedisplay {
     display: none;
 }
 
-.hideslidertwoopacity {
-    opacity: 0;
-}
 
 .hideslidertwodisplay {
     display: none;
 }
 
-.hidesliderthreeopacity {
-    opacity: 0;
-}
 
 .hidesliderthreedisplay {
     display: none;
@@ -769,3 +733,70 @@ a{
     animation-duration: 4s;
 }
 
+
+.lefttorightsliderone{
+    position :relative;
+    -webkit-animation: lefttoright 0.8s ; /* Chrome, Safari, Opera */
+    animation: lefttoright 0.8s ;
+}
+
+.righttoleftsliderone{
+    position :relative;
+    -webkit-animation: righttoleft 0.8s ; /* Chrome, Safari, Opera */
+    animation: righttoleft 0.8s ;
+}
+
+.lefttorightslidertwo{
+    position :relative;
+    -webkit-animation: lefttoright 0.8s ; /* Chrome, Safari, Opera */
+    animation: lefttoright 0.8s ;
+}
+
+.righttoleftslidertwo{
+    position :relative;
+    -webkit-animation: righttoleft 0.8s ; /* Chrome, Safari, Opera */
+    animation: righttoleft 0.8s ;
+}
+
+.lefttorightsliderthree{
+    position :relative;
+    -webkit-animation: lefttoright 0.8s ; /* Chrome, Safari, Opera */
+    animation: lefttoright 0.8s ;
+}
+
+.righttoleftsliderthree{
+    position :relative;
+    -webkit-animation: righttoleft 0.8s ; /* Chrome, Safari, Opera */
+    animation: righttoleft 0.8s ;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes lefttoright {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+
+/* Standard syntax */
+@keyframes lefttoright {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes righttoleft {
+    from {right: 0px;}
+    to {right: 100%;}
+}
+
+.topleftlogo{
+    width:34px;
+    margin-top:4px;
+    margin-left:10px
+}
+
+/* Standard syntax */
+@keyframes righttoleft {
+    from {right: 0px;}
+    to {right: 100%;}
+}

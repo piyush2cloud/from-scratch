@@ -2,13 +2,12 @@
 <html ng-app="poolin" xmlns:font-family="http://www.w3.org/1999/xhtml">
 
 
-<head>
+
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="bower_components/bootstrap-sidebar/dist/css/sidebar.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.css">
-</head>
 
 <body scroll ng-controller="myCtrl">
 
@@ -23,12 +22,12 @@
         <img src="_include/img/Logo_Blue.png"
              ng-class="{starttimernodisplaynone:starttimernodisplaynone,
              starttimernodisplaytrue:starttimernodisplaytrue}"
-             style="width:34px;margin-top:4px;margin-left:10px">
+             class="topleftlogo">
 
         <img src="_include/img/Logo_White.png"
              ng-class="{endtimerlogodisplaytrue:endtimerlogodisplaytrue,
              endtimerlogodisplaynone:endtimerlogodisplaynone}"
-             style="width:34px;margin-top:4px;margin-left:10px">
+             class="topleftlogo">
     </a>
 
     <button type="button"
@@ -223,21 +222,6 @@
 
     <div class="row" style="height:470px;">
 
-        <!--<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 planandplay text-center"
-             style="height: 100%;border-right:1px solid black">
-            <a style="color:white;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
-                SPLIT &amp; SETTLE
-            </a>
-            <img src="images/Flow_Split.gif" style="width: 200px">
-        </div>
-
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 splitandsettle text-center" style="height: 100%">
-            <a style="color:white;font-size: 20px;text-decoration: blink;font-family: 'titillium Web',sans-serif;display: block">
-                PLAN &amp; PAY
-            </a>
-            <img src="images/Flow_Plan.gif" style="width: 200px">
-        </div>-->
-
         <div class="col-md-6 col-lg-6 splitsettledefaultbackground"
              style="height:100%;
              border-right:1px solid black;
@@ -291,22 +275,22 @@
 
                     <span class="splitsettletextdefault" style="display:block"
                           ng-class="{splitsettletextonefade:splittextone}">
-                         1. Choose Amount
+                         Choose Amount
                     </span>
 
                     <span class="splitsettletextdefault" style="display:block;margin-top:70px"
                           ng-class="{splitsettletexttwofade:splittexttwo}">
-                          2. Create Pool
+                          Create Pool
                     </span>
 
                     <span class="splitsettletextdefault" style="display:block;margin-top:70px"
                           ng-class="{splitsettletexttwofade:splittextthree}">
-                          3. Manage Friends
+                          Manage Friends
                     </span>
 
                     <span class="splitsettletextdefault" style="display:block;margin-top:70px"
                           ng-class="{splitsettletexttwofade:splittextfour}">
-                          4. Payment to Bank
+                          Payment to Bank
                      </span>
 
                 </div>
@@ -403,8 +387,13 @@
 
         <div class="row defaultsliderone"
              ng-click="changesliderone()"
-             ng-class="{showslideroneopacity:showslideroneopacity,showslideronedisplay:showslideronedisplay,hideslideroneopacity:hideslideroneopacity
-             ,hideslideronedisplay:hideslideronedisplay}">
+             style="background-color: red"
+             ng-class="{
+             showslideronedisplay:showslideronedisplay,
+             hideslideronedisplay:hideslideronedisplay,
+             lefttorightsliderone:lefttorightsliderone,
+             righttoleftsliderone:righttoleftsliderone}">
+
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/collect.jpg" style="width:300px;">
@@ -424,8 +413,8 @@
         </div>
 
         <div class="row defaultslidertwo" ng-click="changeslidertwo()"
-             ng-class="{showslidertwoopacity:showslidertwoopacity,showslidertwodisplay:showslidertwodisplay,hideslidertwoopacity:hideslidertwoopacity
-             ,hideslidertwodisplay:hideslidertwodisplay}">
+             ng-class="{showslidertwodisplay:showslidertwodisplay
+             ,hideslidertwodisplay:hideslidertwodisplay,lefttorightslidertwo:lefttorightslidertwo,righttoleftslidertwo:righttoleftslidertwo}">
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/dining.jpg" style="width:300px;">
@@ -446,9 +435,10 @@
 
 
         <div class="row defaultsliderthree" ng-click="changesliderthree()"
-             ng-class="{showsliderthreeopacity:showsliderthreeopacity,showsliderthreedisplay:showsliderthreedisplay,hidesliderthreeopacity:
-             hidesliderthreeopacity
-             ,hidesliderthreedisplay:hidesliderthreedisplay}">
+             ng-class="{showsliderthreedisplay:showsliderthreedisplay,
+             hidesliderthreedisplay:hidesliderthreedisplay
+             ,lefttorightsliderthree:lefttorightsliderthree,
+             righttoleftsliderthree:righttoleftsliderthree}">
 
             <div class="col-lg-6 col-md-6 text-center">
                 <img src="_include/img/samples/others.jpg" style="width:300px;">
@@ -496,11 +486,11 @@
     </div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
 <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
@@ -508,5 +498,7 @@
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
+
+
 </body>
 </html>
