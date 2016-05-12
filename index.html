@@ -8,15 +8,13 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.css">
 
-<body scroll ng-controller="myCtrl">
-
-<span st></span>
+<body ng-class="{onloadimage:onloadimage}" scroll ng-controller="myCtrl">
 
 <!-- This is the Navbar which also includes sidebar-->
-<div ng-include="'html/navbar.html'"></div>
+<div ng-show="navshow" ng-include="'html/navbar.html'"></div>
 
 <!-- Begin page content -->
-<div class="container-fluid containerfluidwrapper" ng-click="makebackgroundnormal()">
+<div ng-show="containershow" class="container-fluid containerfluidwrapper" ng-click="makebackgroundnormal()">
     <div ng-include="'html/section1.html'"></div>
     <div ng-include="'html/section2.html'"></div>
     <div ng-include="'html/section3.html'"></div>

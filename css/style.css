@@ -404,7 +404,6 @@ body {
 .myaccount {
     color: #f5a623;  !important;
     padding-left:15%;
-
 }
 
 .myaccount:hover {
@@ -1026,4 +1025,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .footerpoolin .footerimg{
     width:50px;
+}
+
+.onloadimage{
+    background-image: url('../images/Loader.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black;
 }

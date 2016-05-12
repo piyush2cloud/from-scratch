@@ -2,6 +2,38 @@ var app = angular.module('poolin.controllers', [])
 
 app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $document) {
 
+    $scope.onloadimage = 1;
+    $scope.containershow=0;
+    $scope.navshow=0;
+
+    $scope.$watch('$viewContentLoaded',function(event, viewConfig){
+        console.log("Contents did load.");
+        $scope.onloadimage = 0;
+        $scope.navshow=1;
+        $scope.containershow=1;
+
+        $timeout(function () {
+            $scope.showtagline = 1;
+            $scope.lightbackground = 1;
+            $scope.navbarbackgroundcolourwhite = 1;
+            $scope.iconbarchange = 1;
+        }, 1000);
+    });
+
+   /* $timeout(function () {
+        $scope.onloadimage = 0;
+        $scope.navshow=1;
+        $scope.containershow=1;
+
+        $timeout(function () {
+            $scope.showtagline = 1;
+            $scope.lightbackground = 1;
+            $scope.navbarbackgroundcolourwhite = 1;
+            $scope.iconbarchange = 1;
+        }, 1000);
+
+    }, 1000);*/
+
     $scope.showtagline = 0;
     $scope.starttimerlogo = 1;
     $scope.endtimerlogo = 0;
@@ -238,12 +270,6 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
     $scope.endtimerlogodisplaynone = 1;  //whitelogo
     $scope.endtimerlogodisplaytrue = 0;
 
-    $timeout(function () {
-        $scope.showtagline = 1;
-        $scope.lightbackground = 1;
-        $scope.navbarbackgroundcolourwhite = 1;
-        $scope.iconbarchange = 1;
-    }, 1000);
 
     $scope.firstDivHide = 0;
     $scope.secondDivHide = 0;
