@@ -11,7 +11,7 @@
 <body ng-class="{onloadimage:onloadimage}" scroll ng-controller="myCtrl">
 
 <!-- This is the Navbar which also includes sidebar-->
-<div ng-show="navshow" ng-include="'html/navbar.html'"></div>
+<div ng-show="navshow" ng-include="'html/navbar.html'" onload="finishLoading()" ></div>
 
 <!-- Begin page content -->
 <div ng-show="containershow" class="container-fluid containerfluidwrapper" ng-click="makebackgroundnormal()">

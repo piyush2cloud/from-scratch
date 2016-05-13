@@ -11,23 +11,28 @@ mainApp.directive("scroll", function ($window) {
                 scope.navbarbackgroundcolourwhite = 0;
                 scope.navbarbackgroundcolourdark = 1;
 
-                scope.starttimernodisplaynone = 1;
+                /*scope.starttimernodisplaynone = 1;
                 scope.starttimernodisplaytrue = 0;
 
                 scope.endtimerlogodisplaytrue = 1;
-                scope.endtimerlogodisplaynone = 0;
+                scope.endtimerlogodisplaynone = 0;*/
+                scope.logozindexblue=0;
+                scope.logozindexwhite=1;
+
 
             }
 
             else {
                 scope.navbarbackgroundcolourwhite = 1;
                 scope.navbarbackgroundcolourdark = 0;
-
-                scope.starttimernodisplaynone = 0;
-                scope.endtimerlogodisplaytrue = 0;
-
+                scope.logozindexblue=1;
+                scope.logozindexwhite=0;
+                /*scope.starttimernodisplaynone = 0;
                 scope.starttimernodisplaytrue = 1;
-                scope.endtimerlogodisplaynone = 1;
+
+                scope.endtimerlogodisplaytrue = 0;
+                scope.endtimerlogodisplaynone = 1;*/
+
             }
 
             scope.$apply();

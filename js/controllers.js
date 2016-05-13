@@ -1,10 +1,35 @@
 var app = angular.module('poolin.controllers', [])
 
-app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $document) {
+app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $document,$filter) {
 
     $scope.onloadimage = 1;
     $scope.containershow=0;
     $scope.navshow=0;
+
+    $scope.logozindexblue=1;
+    $scope.logozindexwhite=0;
+
+    $scope.$on('$includeContentLoaded', function (event, target) {
+        console.log(event);  //this $includeContentLoaded event object
+        console.log(target); //path to the included resource, 'snippet.html' in this case
+
+        if(target=="html/footer.html"){
+            var date = new Date();
+            $scope.ddMMyyyy = $filter('date')(new Date(), 'dd/MM/yyyy HH:mm:ss');
+            console.log("Time until DOMready: winodw", $scope.ddMMyyyy);
+            $scope.onloadimage = 0;
+            $scope.navshow=1;
+            $scope.containershow=1;
+
+            $timeout(function () {
+                $scope.showtagline = 1;
+                $scope.lightbackground = 1;
+                $scope.navbarbackgroundcolourwhite = 1;
+                $scope.iconbarchange = 1;
+            }, 1000);
+        }
+
+    });
 
     /*$scope.$watch('$viewContentLoaded',function(event, viewConfig){
         console.log("Contents did load.");
@@ -20,19 +45,6 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
         }, 1000);
     });*/
 
-   $timeout(function () {
-        $scope.onloadimage = 0;
-        $scope.navshow=1;
-        $scope.containershow=1;
-
-        $timeout(function () {
-            $scope.showtagline = 1;
-            $scope.lightbackground = 1;
-            $scope.navbarbackgroundcolourwhite = 1;
-            $scope.iconbarchange = 1;
-        }, 1000);
-
-    }, 1000);
 
     $scope.showtagline = 0;
     $scope.starttimerlogo = 1;
@@ -45,8 +57,25 @@ app.controller("myCtrl", function ($scope, $timeout, $window, $interval, $docume
     $scope.splittexttwo = 0;
     $scope.splittextthree = 0;
     $scope.splittextfour = 0;
-
     $scope.makebodyblur = 0;
+
+    /*$timeout(function () {
+        $scope.onloadimage = 0;
+        $scope.navshow=1;
+        $scope.containershow=1;
+
+        $timeout(function () {
+            $scope.showtagline = 1;
+            $scope.lightbackground = 1;
+            $scope.navbarbackgroundcolourwhite = 1;
+            $scope.iconbarchange = 1;
+        }, 1000);
+
+    }, 8000);*/
+
+
+
+
 
     $scope.makebackgroundblur = function () {
         $scope.makebodyblur = 1;

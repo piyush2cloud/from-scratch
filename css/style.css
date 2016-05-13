@@ -289,8 +289,8 @@
     color: #f5a623;
     font-family: 'Titillium Web', sans-serif;
     letter-spacing: 1px;
-    font-weight: 900;
-    font-size: 12px
+    font-weight: 800;
+    font-size: 1em;
 }
 
 .startonwebbutton:hover {
@@ -326,6 +326,7 @@ body {
 .howitworks {
     color: white; !important;
     padding-left:15%;
+    cursor: pointer;
 }
 
 .howitworks:hover {
@@ -363,6 +364,7 @@ body {
 .examples {
     color: white;  !important;
     padding-left:15%;
+    cursor: pointer;
 }
 
 .examples:hover {
@@ -372,7 +374,7 @@ body {
 .getstarted {
     color: white;  !important;
     padding-left:15%;
-
+    cursor: pointer;
 }
 
 .getstarted:hover {
@@ -383,17 +385,17 @@ body {
 .faqs {
     color: white;  !important;
     padding-left:15%;
-
+    cursor: pointer;
 }
 
 .faqs:hover {
     color: black;
-
 }
 
 .forbusinesses {
     color: white;  !important;
     padding-left:15%;
+    cursor: pointer;
 }
 
 .linebreakersidebar{
@@ -408,11 +410,11 @@ body {
 .myaccount {
     color: #f5a623;  !important;
     padding-left:15%;
+    cursor: pointer;
 }
 
 .myaccount:hover {
     color: black;
-
 }
 
 .splitsettletextdefault {
@@ -797,9 +799,17 @@ a{
 
 
 .topleftlogo{
-    width:34px;
-    margin-top:4px;
-    margin-left:10px
+    position: absolute;
+    width:34px;top:8px;
+    left:10px
+}
+
+.logozindexwhite{
+    z-index: 10;
+}
+
+.logozindexblue{
+    z-index: 10;
 }
 
 .sidebarrightposition{
@@ -833,23 +843,29 @@ a{
 .socialaccount .ion-social-facebook{
     color:white;
     font-size:1.2em;
+    cursor: pointer;
+
 }
 
 .socialaccount .ion-social-twitter{
     color:white;
     font-size:1.2em;
     margin-left:3%;
+    cursor: pointer;
+
 }
 
 .socialaccount .ion-social-facebook{
     color:white;
     font-size:1.2em;
+    cursor: pointer;
 }
 
 .socialaccount .ion-social-youtube{
     color:white;
     font-size:1.2em;
     margin-left:3%;
+    cursor: pointer;
 }
 
 .containerfluidwrapper{
